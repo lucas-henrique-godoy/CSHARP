@@ -1,0 +1,15 @@
+C:\Users\lucasgodoy\Desktop\C#\Meu_Primeiro_Hello_World\Meu_Primeiro_Hello_World\bin\Debug\net5.0\Meu_Primeiro_Hello_World.exe
+C:\Users\lucasgodoy\Desktop\C#\Meu_Primeiro_Hello_World\Meu_Primeiro_Hello_World\bin\Debug\net5.0\Meu_Primeiro_Hello_World.deps.json
+C:\Users\lucasgodoy\Desktop\C#\Meu_Primeiro_Hello_World\Meu_Primeiro_Hello_World\bin\Debug\net5.0\Meu_Primeiro_Hello_World.runtimeconfig.json
+C:\Users\lucasgodoy\Desktop\C#\Meu_Primeiro_Hello_World\Meu_Primeiro_Hello_World\bin\Debug\net5.0\Meu_Primeiro_Hello_World.runtimeconfig.dev.json
+C:\Users\lucasgodoy\Desktop\C#\Meu_Primeiro_Hello_World\Meu_Primeiro_Hello_World\bin\Debug\net5.0\Meu_Primeiro_Hello_World.dll
+C:\Users\lucasgodoy\Desktop\C#\Meu_Primeiro_Hello_World\Meu_Primeiro_Hello_World\bin\Debug\net5.0\Meu_Primeiro_Hello_World.pdb
+C:\Users\lucasgodoy\Desktop\C#\Meu_Primeiro_Hello_World\Meu_Primeiro_Hello_World\obj\Debug\net5.0\Meu_Primeiro_Hello_World.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucasgodoy\Desktop\C#\Meu_Primeiro_Hello_World\Meu_Primeiro_Hello_World\obj\Debug\net5.0\Meu_Primeiro_Hello_World.AssemblyInfoInputs.cache
+C:\Users\lucasgodoy\Desktop\C#\Meu_Primeiro_Hello_World\Meu_Primeiro_Hello_World\obj\Debug\net5.0\Meu_Primeiro_Hello_World.AssemblyInfo.cs
+C:\Users\lucasgodoy\Desktop\C#\Meu_Primeiro_Hello_World\Meu_Primeiro_Hello_World\obj\Debug\net5.0\Meu_Primeiro_Hello_World.csproj.CoreCompileInputs.cache
+C:\Users\lucasgodoy\Desktop\C#\Meu_Primeiro_Hello_World\Meu_Primeiro_Hello_World\obj\Debug\net5.0\Meu_Primeiro_Hello_World.dll
+C:\Users\lucasgodoy\Desktop\C#\Meu_Primeiro_Hello_World\Meu_Primeiro_Hello_World\obj\Debug\net5.0\refint\Meu_Primeiro_Hello_World.dll
+C:\Users\lucasgodoy\Desktop\C#\Meu_Primeiro_Hello_World\Meu_Primeiro_Hello_World\obj\Debug\net5.0\Meu_Primeiro_Hello_World.pdb
+C:\Users\lucasgodoy\Desktop\C#\Meu_Primeiro_Hello_World\Meu_Primeiro_Hello_World\obj\Debug\net5.0\Meu_Primeiro_Hello_World.genruntimeconfig.cache
+C:\Users\lucasgodoy\Desktop\C#\Meu_Primeiro_Hello_World\Meu_Primeiro_Hello_World\obj\Debug\net5.0\ref\Meu_Primeiro_Hello_World.dll
