@@ -12,3 +12,10 @@ C:\Users\lucasgodoy\Desktop\C#\Curso-de-Csharp\EstruturasDecisao\EstruturasDecis
 C:\Users\lucasgodoy\Desktop\C#\Curso-de-Csharp\EstruturasDecisao\EstruturasDecisao\obj\Debug\EstruturasDecisao.csproj.CoreCompileInputs.cache
 C:\Users\lucasgodoy\Desktop\C#\Curso-de-Csharp\EstruturasDecisao\EstruturasDecisao\obj\Debug\EstruturasDecisao.exe
 C:\Users\lucasgodoy\Desktop\C#\Curso-de-Csharp\EstruturasDecisao\EstruturasDecisao\obj\Debug\EstruturasDecisao.pdb
+C:\Users\lucasgodoy\Desktop\CSHARP\EstruturasDecisao\EstruturasDecisao\bin\Debug\EstruturasDecisao.exe.config
+C:\Users\lucasgodoy\Desktop\CSHARP\EstruturasDecisao\EstruturasDecisao\bin\Debug\EstruturasDecisao.exe
+C:\Users\lucasgodoy\Desktop\CSHARP\EstruturasDecisao\EstruturasDecisao\bin\Debug\EstruturasDecisao.pdb
+C:\Users\lucasgodoy\Desktop\CSHARP\EstruturasDecisao\EstruturasDecisao\obj\Debug\EstruturasDecisao.csproj.AssemblyReference.cache
+C:\Users\lucasgodoy\Desktop\CSHARP\EstruturasDecisao\EstruturasDecisao\obj\Debug\EstruturasDecisao.csproj.CoreCompileInputs.cache
+C:\Users\lucasgodoy\Desktop\CSHARP\EstruturasDecisao\EstruturasDecisao\obj\Debug\EstruturasDecisao.exe
+C:\Users\lucasgodoy\Desktop\CSHARP\EstruturasDecisao\EstruturasDecisao\obj\Debug\EstruturasDecisao.pdb
