@@ -23,7 +23,7 @@ namespace EstruturasDecisao
             }
             else
             {
-                Console.WriteLine("Sair"); // Pode adicionar algum código ou remover se não necessário.
+                Console.WriteLine("Sair"); // Pode adicionar algum código ou remover se não necessário
             }
 
             Console.ReadKey();
