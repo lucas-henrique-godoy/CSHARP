@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lucasgodoy\\Desktop\\C#\\Meu_Primeiro_Hello_World\\",
+  "WorkspaceRootPath": "C:\\Users\\lucasgodoy\\Desktop\\CSHARP\\Meu_Primeiro_Hello_World\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CBB7EAD0-99C1-4BC0-BD23-6A8EAB257E5C}|Meu_Primeiro_Hello_World\\Meu_Primeiro_Hello_World.csproj|c:\\users\\lucasgodoy\\desktop\\c#\\meu_primeiro_hello_world\\meu_primeiro_hello_world\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CBB7EAD0-99C1-4BC0-BD23-6A8EAB257E5C}|Meu_Primeiro_Hello_World\\Meu_Primeiro_Hello_World.csproj|c:\\users\\lucasgodoy\\desktop\\csharp\\meu_primeiro_hello_world\\meu_primeiro_hello_world\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBB7EAD0-99C1-4BC0-BD23-6A8EAB257E5C}|Meu_Primeiro_Hello_World\\Meu_Primeiro_Hello_World.csproj|solutionrelative:meu_primeiro_hello_world\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lucasgodoy\\Desktop\\C#\\Meu_Primeiro_Hello_World\\Meu_Primeiro_Hello_World\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\lucasgodoy\\Desktop\\CSHARP\\Meu_Primeiro_Hello_World\\Meu_Primeiro_Hello_World\\Program.cs",
               "RelativeDocumentMoniker": "Meu_Primeiro_Hello_World\\Program.cs",
-              "ToolTip": "C:\\Users\\lucasgodoy\\Desktop\\C#\\Meu_Primeiro_Hello_World\\Meu_Primeiro_Hello_World\\Program.cs",
+              "ToolTip": "C:\\Users\\lucasgodoy\\Desktop\\CSHARP\\Meu_Primeiro_Hello_World\\Meu_Primeiro_Hello_World\\Program.cs",
               "RelativeToolTip": "Meu_Primeiro_Hello_World\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-05T15:27:12.485Z",
               "EditorCaption": ""
