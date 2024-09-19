@@ -18,7 +18,7 @@ namespace EstruturasDecisao
             {
                 Console.WriteLine(nome); // Imprime o nome
             }
-            // Verifica se o nome é "Debugando C"
+            // Verifica se o nome é "Debugando C".
             else if (nome == "Debugando C")
             {
                 Console.WriteLine("Ola Mundo!"); // Imprime uma saudação
