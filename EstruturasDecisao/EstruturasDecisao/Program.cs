@@ -31,4 +31,3 @@ namespace EstruturasDecisao
     }
 }
 
-Console.Writeline("Lucas- Bem-Vindo!");
