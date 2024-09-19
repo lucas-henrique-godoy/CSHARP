@@ -1,21 +1,192 @@
+1. Estruturas Básicas
+Variáveis e Tipos de Dados
+C# é uma linguagem tipada, o que significa que você precisa declarar o tipo de dados das variáveis.
+
+int idade = 25;
+double salario = 3500.50;
+string nome = "João";
+bool ativo = true;
+_______________________________________________________________________________________________________________________________________________________________________
+
+Constantes
+As constantes são declaradas com a palavra-chave const.
+
+const double PI = 3.14;
+_______________________________________________________________________________________________________________________________________________________________________
+
+2. Estruturas de Controle
+Condicionais
+Usamos if, else if, e else para fazer decisões.
+
+if (idade >= 18)
+{
+    Console.WriteLine("Você é maior de idade.");
+}
+else
+{
+    Console.WriteLine("Você é menor de idade.");
+}
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+Laços de Repetição
+Os laços permitem repetir um bloco de código.
+
+For Loop:
+
+for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine($"Número: {i}");
+}
+
+
+While Loop:
+
+int contador = 0;
+while (contador < 5)
+{
+    Console.WriteLine($"Contador: {contador}");
+    contador++;
+}
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+3. Métodos
+Métodos são blocos de código que realizam uma tarefa específica e podem ser reutilizados.
+
+void Apresentar(string nome)
+{
+    Console.WriteLine($"Olá, {nome}!");
+}
+
+// Chamada do método
+Apresentar("Maria");
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+4. Classes e Objetos
+C# é uma linguagem orientada a objetos. Você pode definir suas próprias classes.
+
+class Pessoa
+{
+    public string Nome { get; set; }
+    public int Idade { get; set; }
+
+    public void Apresentar()
+    {
+        Console.WriteLine($"Olá, meu nome é {Nome} e eu tenho {Idade} anos.");
+    }
+}
+
+// Criando um objeto
+Pessoa pessoa = new Pessoa();
+pessoa.Nome = "Carlos";
+pessoa.Idade = 30;
+pessoa.Apresentar();
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+5. Listas e Coleções
+As coleções são usadas para armazenar grupos de objetos.
+
+using System.Collections.Generic;
+
+List<string> frutas = new List<string>();
+frutas.Add("Maçã");
+frutas.Add("Banana");
+frutas.Add("Laranja");
+
+foreach (var fruta in frutas)
+{
+    Console.WriteLine(fruta);
+}
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+6. Tratamento de Exceções
+C# oferece uma maneira de tratar erros usando try, catch e finally.
+
+try
+{
+    int resultado = 10 / 0; // Isso gera uma exceção
+}
+catch (DivideByZeroException ex)
+{
+    Console.WriteLine("Erro: Não é possível dividir por zero.");
+}
+finally
+{
+    Console.WriteLine("Este bloco sempre será executado.");
+}
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+7. Programação Assíncrona
+C# suporta programação assíncrona com async e await.
+
+using System.Threading.Tasks;
+
+async Task<string> BuscarDadosAsync()
+{
+    await Task.Delay(2000); // Simula uma operação demorada
+    return "Dados carregados.";
+}
+
+// Uso
+async Task Main()
+{
+    string dados = await BuscarDadosAsync();
+    Console.WriteLine(dados);
+}
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+8. LINQ (Language Integrated Query)
+LINQ é uma poderosa ferramenta para consultar coleções.
+
+using System.Linq;
+
+List<int> numeros = new List<int> { 1, 2, 3, 4, 5 };
+var numerosPares = from n in numeros
+                   where n % 2 == 0
+                   select n;
+
+foreach (var numero in numerosPares)
+{
+    Console.WriteLine(numero);
+}
+
+_______________________________________________________________________________________________________________________________________________________________________
+Conclusão
+Esses são os conceitos básicos de C#. À medida que você avança, pode explorar tópicos mais avançados, como interfaces, herança, delegados e eventos. A prática é fundamental, então experimente escrever seus próprios exemplos! Se precisar de mais detalhes sobre algum tópico específico, sinta-se à vontade para perguntar.
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+
 Console.ReadKey()
+
 Função: Lê a tecla pressionada pelo usuário no console e aguarda até que uma tecla seja pressionada.
+
 Uso Comum:
+
 Pausar a Execução: Mantém a janela do console aberta até que o usuário pressione uma tecla.
 Capturar Entrada: Permite capturar e usar a tecla pressionada.
-Ignorar Entrada: Pode ser usado com argumento true para não exibir a tecla pressionada.
-Exemplos de Uso
+Ignorar Entrada: Pode ser usado com o argumento true para não exibir a tecla pressionada.
+Exemplos de Uso:
+
 Manter o Console Aberto:
 
 Console.WriteLine("Pressione qualquer tecla para sair...");
 Console.ReadKey();
 Capturar e Mostrar a Tecla Pressionada:
 
+
 Console.WriteLine("Pressione uma tecla:");
 ConsoleKeyInfo tecla = Console.ReadKey();
 Console.WriteLine($"\nVocê pressionou: {tecla.KeyChar}");
 Ignorar a Tecla Pressionada:
 
+
 Console.WriteLine("Pressione uma tecla (não será exibida):");
 Console.ReadKey(true);
-Console.ReadKey() é útil para interação com o usuário em aplicativos de console, ajudando a pausar a execução ou capturar a entrada do usuário.
+Conclusão: Console.ReadKey() é útil para interação com o usuário em aplicativos de console, ajudando a pausar a execução ou capturar a entrada do usuário.
