@@ -6,6 +6,14 @@ int idade = 25;
 double salario = 3500.50;
 string nome = "João";
 bool ativo = true;
+
+- OBS:O tipo float em C# não está obsoleto, mas seu uso é menos comum que o de double, que oferece maior precisão (64 bits vs. 32 bits).
+
+Precisão: O float é de precisão simples, enquanto o double é de precisão dupla.
+Declaração: Literais de ponto flutuante são tratados como double por padrão; para usar float, deve-se adicionar um sufixo f (ex: float decibeis = 15.14f;).
+Desempenho: A diferença de desempenho é geralmente pequena, mas double é preferido em cálculos financeiros que exigem precisão.
+Compatibilidade: O float ainda é usado em gráficos de jogos e APIs específicas.
+Em resumo, o float é menos comum, mas não está em desuso.
 _______________________________________________________________________________________________________________________________________________________________________
 
 Constantes
