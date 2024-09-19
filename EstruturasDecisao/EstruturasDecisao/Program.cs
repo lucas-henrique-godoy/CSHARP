@@ -16,7 +16,7 @@ namespace EstruturasDecisao
             // Verifica se o nome é "Lucas" e a idade é 18
             if (nome == "Lucas" && idade == 18)
             {
-                Console.WriteLine(nome); // Imprime o nome
+                Console.WriteLine(nome); // Imprime o nome.
             }
             // Verifica se o nome é "Debugando C"
             else if (nome == "Debugando C")
