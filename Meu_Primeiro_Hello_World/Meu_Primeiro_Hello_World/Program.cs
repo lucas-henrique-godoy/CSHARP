@@ -6,7 +6,7 @@ namespace Meu_Primeiro_Hello_World // Namespace permite referenciar em outros pr
     {
         static void Main(string[] args) // Método estático que sempre vai se construir independente da instanciação da classe, para podermos iniciar o programa.
         {
-            Console.WriteLine("Hello World!!!"); // Console(terminal) - WriteLine(escreva linha)
+            Console.WriteLine("Hello World!"); // Console(terminal) - WriteLine(escreva linha)
             //Console.ReadLine(); é um método em C# que lê a entrada do usuário até o Enter, usado para capturar dados ou pausar a execução do programa.
         }
     }
