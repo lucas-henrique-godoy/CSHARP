@@ -28,6 +28,7 @@ namespace EstruturasDecisao
                 Console.WriteLine("Sair"); // Imprime "Sair"; pode adicionar lógica adicional aqui, se necessário
             }*/
 
+            //ESTRUTURA SWITCH CASE
             switch (verdade)
             {
                 case true:
