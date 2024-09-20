@@ -13,7 +13,7 @@ namespace EstruturasDecisao
             bool verdade = true; // Variável booleana que indica verdadeiro ou falso
             var nsei = 0; // Não espera nenhum valor, mas identifica qual é o valor que esta vindo. // 'var' é usado para inferir o tipo da variável automaticamente; aqui, nsei é inferido como int a partir do valor 0.
 
-            // Verifica se o nome é "Lucas" e a idade é 18
+            /* Verifica se o nome é "Lucas" e a idade é 18
             if (nome == "Lucas" && idade == 18)
             {
                 Console.WriteLine(nome); // Imprime o nome
@@ -26,7 +26,19 @@ namespace EstruturasDecisao
             else
             {
                 Console.WriteLine("Sair"); // Imprime "Sair"; pode adicionar lógica adicional aqui, se necessário
+            }*/
+
+            switch (verdade)
+            {
+                case true:
+                    nsei = 1;
+                    break;
+
+                default:
+                    nsei = 2;
+                    break;
             }
+            Console.WriteLine(nsei);
 
             Console.ReadKey(); // Aguarda uma tecla ser pressionada antes de fechar
         }
