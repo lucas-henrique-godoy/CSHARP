@@ -6,7 +6,7 @@ namespace EstruturasDecisao
     {
         static void Main(string[] args)
         {
-            string nome = "Debugando C"; // Nome da pessoa
+            string nome = "Debugando "; // Nome da pessoa
             int idade = 18; // Idade da pessoa
             float decibeis = 15.14f; // 15.14 é tratado como double, então o 'f' é necessário para indicar que é um float.
             double salario = 10.50; // Salário em formato double
