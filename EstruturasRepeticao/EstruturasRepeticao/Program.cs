@@ -20,10 +20,35 @@ namespace EstruturasRepeticao
 
             // Estruturas de Repetição
 
+            /*FOR
             for (int i = 0; i < 5;i++)
             {
                 Console.WriteLine(i);                
+            }*/
+
+
+            //WHILE
+            bool loop = true;
+
+            int i = 0;
+
+            while (loop)
+            {
+                if(i == 5)
+                {
+                    loop = false;
+                }
+                Console.WriteLine(i);
+                i++;
             }
+
+
+
+
+            //
+
+
+
 
             Console.WriteLine("FIM!");
 
