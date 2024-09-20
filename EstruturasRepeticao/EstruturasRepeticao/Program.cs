@@ -10,7 +10,7 @@ namespace EstruturasRepeticao
     {
         static void Main(string[] args)
         {
-            string nome = "Debugando ";
+            string nome = "Pessoa";
             int idade = 18;
             float decibeis = 15.14f;
             double salario = 10.50;
@@ -18,7 +18,7 @@ namespace EstruturasRepeticao
             var nsei = 0;
 
 
-            // Estruturas de Repetição
+            // ESTRUTURAS DE REPETIÇÃO.
 
             /*FOR
             for (int i = 0; i < 5;i++)
@@ -26,31 +26,62 @@ namespace EstruturasRepeticao
                 Console.WriteLine(i);                
             }*/
 
+            //______________________________________________________________
 
             //WHILE
-            bool loop = true;
+            // USANDO IF JUNTO DO WHILE 
+            bool loop = false;
+            
+             int i = 0;
+            /*
+             while (loop)
+             {
+                 if(i == 5)
+                 {
+                     loop = false;
+                 }
+                 Console.WriteLine(i);
+                 i++;
+             }
+            */
 
-            int i = 0;
+            //______________________________________________________________
 
-            while (loop)
+            //MANIERA CONVENCIONAL DE USO DO WHILE
+
+            /*int i = 0;
+
+            while (i < 5) // Continua enquanto 'i' for menor que 5
             {
-                if(i == 5)
+                Console.WriteLine(i); // Imprime o valor atual de 'i'
+                i++; // Incrementa 'i'
+            }
+            Console.WriteLine(i); // Imprime 5 fora do loop
+            */
+
+            //______________________________________________________________
+            string nomeRaiz = "Pessoa";
+
+            while (loop) 
+            { 
+                nome = nomeRaiz + i.ToString();
+                if (nome == "Pessoa3")
                 {
                     loop = false;
                 }
-                Console.WriteLine(i);
-                i++;
+                else
+                {
+                    i++;
+                }                
             }
+            //______________________________________________________________
 
+            //DO WHILE
+            do
+            {
+                loop = true;
 
-
-
-            //
-
-
-
-
-            Console.WriteLine("FIM!");
+            }while (loop);
 
             Console.ReadKey();
         }
