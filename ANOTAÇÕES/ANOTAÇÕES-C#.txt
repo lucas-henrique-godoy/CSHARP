@@ -201,3 +201,8 @@ Conclusão: Console.ReadKey() é útil para interação com o usuário em aplica
 
 
 -Neste ponto eu baixei o SQL Express e sua ide o SSMS.
+E criei um banco chamado Debugand_C e uma tabela chamada tb_Nomes, que contém o seguinte código apenas:
+
+INSERT INTO tb_Nomes VALUES ('Lucas')
+
+SELECT * FROM tb_Nomes
