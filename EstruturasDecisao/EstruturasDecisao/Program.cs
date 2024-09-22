@@ -14,6 +14,7 @@ namespace EstruturasDecisao
             var nsei = 0;   // Não espera nenhum valor, mas identifica qual é o valor que esta vindo. // 'var' é usado para inferir o tipo da variável automaticamente; aqui, nsei é inferido como int a partir do valor 0.
 
             /* ESTRUTURAS DE DECISÃO
+             
              * Verifica se o nome é "Lucas" e a idade é 18
             if (nome == "Lucas" && idade == 18)
             {

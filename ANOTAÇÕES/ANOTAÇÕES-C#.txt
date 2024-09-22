@@ -198,3 +198,6 @@ Ignorar a Tecla Pressionada:
 Console.WriteLine("Pressione uma tecla (não será exibida):");
 Console.ReadKey(true);
 Conclusão: Console.ReadKey() é útil para interação com o usuário em aplicativos de console, ajudando a pausar a execução ou capturar a entrada do usuário.
+
+
+-Neste ponto eu baixei o SQL Express e sua ide o SSMS.
