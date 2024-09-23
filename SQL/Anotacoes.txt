@@ -245,38 +245,64 @@ As transações são essenciais para garantir a integridade e a consistência do
 
 _______________________________________________________________________________________________________________________________________________________________________
 
-Vamos analisar o que acontece nesse conjunto de comandos SQL envolvendo BEGIN TRAN, DROP TABLE, COMMIT e ROLLBACK.
 
-Estrutura e Função dos Comandos
+EXEMPLO 1: EXCLUINDO UMA TABELA COM DROP, USANDO ROLLBACK PARA REVERTER A EXCLUSÃO E EVITANDO COMMIT PARA MANTER A TABELA INTACTA.
+
+BEGIN TRAN
+    DROP TABLE tb_Nomes;
+ROLLBACK TRAN
+COMMIT TRAN
+
+Análise dos Comandos
 BEGIN TRAN:
 
-Este comando inicia uma transação. Todas as operações que ocorrerem após esse comando serão parte da mesma transação até que um COMMIT ou ROLLBACK seja executado.
+Este comando inicia uma transação. Todas as operações seguintes até que um COMMIT ou ROLLBACK sejam executados fazem parte dessa transação.
 DROP TABLE tb_Nomes;:
 
-Este comando remove a tabela tb_Nomes do banco de dados. Importante: Uma vez que uma tabela é excluída, todos os dados contidos nela são permanentemente apagados e a estrutura da tabela não estará mais disponível.
-COMMIT TRAN:
-
-Este comando confirma a transação, tornando todas as alterações feitas (neste caso, o DROP TABLE) permanentes no banco de dados. Depois de um COMMIT, não é mais possível reverter a transação.
+Este comando remove a tabela tb_Nomes do banco de dados. A exclusão é irreversível assim que for confirmada.
 ROLLBACK TRAN:
 
-Este comando reverte todas as operações realizadas desde o último BEGIN TRAN. Se você decidir que não deseja manter as alterações feitas durante a transação, você pode usar ROLLBACK para desfazer tudo.
-Análise do Exemplo
-No contexto deste exemplo:
+Este comando reverte todas as operações realizadas desde o último BEGIN TRAN. Neste caso, ele desfaz a exclusão da tabela tb_Nomes, desde que o ROLLBACK seja chamado antes do COMMIT.
+COMMIT TRAN:
 
-sql
-Copiar código
+Este comando confirma a transação, tornando permanentes todas as alterações feitas durante a transação. No entanto, se o ROLLBACK for chamado antes do COMMIT, nenhuma alteração será confirmada.
+Fluxo da Execução
+Quando o comando DROP TABLE tb_Nomes é executado, a tabela está marcada para ser removida, mas como o ROLLBACK é chamado logo em seguida, a exclusão é revertida.
+O COMMIT não será efetivo após um ROLLBACK. Assim, a tabela tb_Nomes permanecerá no banco de dados, pois a operação de exclusão foi desfeita.
+Resumo
+ROLLBACK: Neste caso, o uso do ROLLBACK TRAN após o DROP TABLE anula a exclusão da tabela, garantindo que ela permaneça intacta.
+COMMIT: Como o ROLLBACK foi executado, o COMMIT não terá efeito, pois nenhuma alteração foi feita.
+Conclusão
+A estrutura do código que você apresentou garante que a tabela tb_Nomes não será excluída, pois o ROLLBACK reverte a operação de DROP TABLE. Portanto, a tabela continuará a existir após a execução desse bloco de código.
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+EXEMPLO 2: SE EU EXECUTAR UM COMMIT ANTES DE REALIZAR O ROLLBACK.
+
+Se você executar um COMMIT antes de um ROLLBACK, o ROLLBACK não terá efeito. Vamos analisar como isso funciona:
+
+FLUXO DE EXECUÇÃO:
+Se a estrutura do seu código fosse assim:
 BEGIN TRAN
     DROP TABLE tb_Nomes;
 COMMIT TRAN
 ROLLBACK TRAN
-Se o COMMIT for executado: A tabela tb_Nomes será removida do banco de dados, e a exclusão não poderá ser desfeita.
 
-Se o ROLLBACK for executado: No entanto, como o COMMIT foi executado antes, o ROLLBACK não terá efeito. O ROLLBACK só é útil se for chamado antes do COMMIT.
+O QUE ACONTECE:
+BEGIN TRAN: Inicia a transação.
 
-Considerações Importantes
-Uso de ROLLBACK Após COMMIT: O ROLLBACK não pode reverter alterações feitas após um COMMIT. Portanto, é importante ter certeza antes de confirmar a transação.
+DROP TABLE tb_Nomes;: Remove a tabela tb_Nomes do banco de dados.
 
-Segurança e Testes: Antes de executar comandos que alteram ou excluem dados (como DROP TABLE), é uma boa prática usar transações para testar o que acontecerá e garantir que você pode reverter as alterações, caso necessário.
+COMMIT TRAN: Confirma a transação, tornando a exclusão da tabela permanente. Neste ponto, a tabela tb_Nomes foi definitivamente removida do banco de dados.
 
-Conclusão
-Neste exemplo, o uso de transações com BEGIN TRAN e COMMIT é mais uma formalidade, já que o DROP TABLE é uma operação irreversível assim que confirmada. O ROLLBACK não terá efeito depois que a transação for confirmada com COMMIT.
+ROLLBACK TRAN: Tenta reverter a transação. No entanto, como a transação já foi confirmada com COMMIT, o ROLLBACK não terá efeito. Não há nada a reverter, e a tabela já está excluída.
+
+RESUMO:
+COMMIT: Confirma todas as alterações realizadas na transação, tornando-as permanentes.
+ROLLBACK: Desfaz alterações feitas na transação desde o último BEGIN TRAN. Mas, se já houver um COMMIT, não haverá nada a ser revertido.
+
+CONCLUSÃO:
+Depois de um COMMIT, as alterações são permanentes e o ROLLBACK não pode reverter essas operações. Portanto, se você quiser manter alterações que envolvem exclusões ou alterações de dados, deve usar ROLLBACK antes de chamar COMMIT.
+
+
+
