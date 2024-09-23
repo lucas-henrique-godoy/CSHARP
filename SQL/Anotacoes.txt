@@ -1,0 +1,23 @@
+-- O comando UPDATE é usado para modificar registros existentes em uma tabela.
+-- Você pode atualizar uma ou mais colunas de uma ou mais linhas que atendem a uma condição específica.
+UPDATE NomeTabela
+SET NomeColuna = 'NovoValor'
+WHERE Condicao;  -- Certifique-se de incluir uma condição para evitar atualizar todos os registros.
+
+-- O comando DELETE é usado para remover registros de uma tabela.
+-- Você pode excluir uma ou mais linhas que atendem a uma condição específica.
+DELETE FROM NomeTabela
+WHERE Condicao;  -- Novamente, inclua uma condição para evitar excluir todos os registros.
+
+-- O comando TRUNCATE é usado para remover todos os registros de uma tabela de forma rápida e eficiente.
+-- Diferente do DELETE, o TRUNCATE não pode ser usado com uma condição e não registra as remoções de cada linha.
+TRUNCATE TABLE NomeTabela;  -- Todos os registros serão removidos, mas a estrutura da tabela permanecerá.
+
+-- O comando ALTER é utilizado para modificar a estrutura de uma tabela existente.
+-- Você pode adicionar, modificar ou excluir colunas, bem como alterar outros aspectos da tabela.
+ALTER TABLE NomeTabela
+ADD NovaColuna TipoDeDados;  -- Exemplo de adição de uma nova coluna.
+
+-- O comando DROP é usado para remover uma tabela (ou outro objeto) do banco de dados.
+-- Este comando exclui a tabela e todos os dados contidos nela de forma permanente.
+DROP TABLE NomeTabela;  -- A tabela e seus dados serão permanentemente excluídos.
