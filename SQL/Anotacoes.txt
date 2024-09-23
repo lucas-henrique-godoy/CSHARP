@@ -206,3 +206,39 @@ Exemplo: Ordena os funcionários por idade.
 SELECT Nome, Idade
 FROM Funcionarios
 ORDER BY Idade ASC;
+
+_______________________________________________________________________________________________________________________________________________________________________
+BEGIN TRAN é um comando usado em bancos de dados para iniciar uma transação. Transações são uma forma de agrupar uma série de operações de banco de dados que devem ser executadas como uma unidade única e atômica. Se todas as operações dentro da transação forem bem-sucedidas, a transação pode ser confirmada; se ocorrer algum erro, todas as operações podem ser revertidas.
+
+Características do BEGIN TRAN
+Início da Transação:
+O comando BEGIN TRAN marca o início de uma transação. Todas as operações subsequentes (como INSERT, UPDATE, DELETE) serão parte dessa transação.
+Atomicidade:
+As transações garantem que todas as operações sejam concluídas com sucesso ou nenhuma delas será aplicada. Isso é conhecido como a propriedade de atomicidade.
+
+Controle de Erros:
+Se uma operação falhar, você pode usar o comando ROLLBACK para desfazer todas as operações realizadas desde o BEGIN TRAN.
+
+Confirmação:
+Se todas as operações forem bem-sucedidas, você pode usar o comando COMMIT para confirmar a transação, tornando as mudanças permanentes no banco de dados.
+Exemplo de Uso
+BEGIN TRAN;
+
+-- Operações de banco de dados
+INSERT INTO Funcionarios (Nome, Idade) VALUES ('Alice', 30);
+UPDATE Funcionarios SET Idade = 31 WHERE Nome = 'Bob';
+
+-- Verifica se tudo ocorreu bem
+IF @@ERROR <> 0
+BEGIN
+    ROLLBACK; -- Desfaz as operações se ocorrer um erro
+END
+ELSE
+BEGIN
+    COMMIT; -- Confirma as operações se tudo estiver certo
+END
+Resumo
+BEGIN TRAN: Inicia uma transação.
+ROLLBACK: Desfaz as operações se ocorrer um erro.
+COMMIT: Confirma as operações, tornando-as permanentes.
+As transações são essenciais para garantir a integridade e a consistência dos dados em sistemas de gerenciamento de banco de dados. Se precisar de mais informações ou exemplos, estou à disposição!
