@@ -1,23 +1,175 @@
--- O comando UPDATE é usado para modificar registros existentes em uma tabela.
--- Você pode atualizar uma ou mais colunas de uma ou mais linhas que atendem a uma condição específica.
+						- SQL SERVER EXPRESS.
+
+O SQL Server Express é uma edição gratuita e leve do Microsoft SQL Server, projetada para desenvolvedores, pequenas aplicações e aprendizado. Aqui estão os principais aspectos que você deve conhecer sobre ele:
+
+1. Características Principais
+Gratuito: SQL Server Express é totalmente gratuito, sem custos de licenciamento, o que o torna uma excelente opção para desenvolvimento e pequenos projetos.
+
+Limitações de Recursos:
+
+Memória: Suporta até 1 GB de RAM.
+Tamanho do Banco de Dados: O tamanho máximo de cada banco de dados é de 10 GB.
+Processadores: Suporta até 1 socket ou 4 núcleos de CPU.
+Sem Suporte a Recursos Avançados: Não inclui recursos avançados das edições pagas, como análise de dados, integração, replicação, ou suporte para BI (Business Intelligence).
+
+2. Instalação e Configuração
+Facilidade de Instalação: O instalador é simples e permite escolher as opções de instalação de forma intuitiva.
+
+Gerenciamento: Pode ser gerenciado usando o SQL Server Management Studio (SSMS), que é uma ferramenta gratuita da Microsoft.
+
+3. Recursos Suportados
+T-SQL: Suporta a linguagem Transact-SQL, permitindo a execução de consultas, criação de procedimentos armazenados e triggers.
+
+Segurança: Oferece autenticação do SQL Server e do Windows, permitindo controlar o acesso aos dados.
+
+Stored Procedures e Views: Você pode criar stored procedures, views, funções e índices.
+
+Backup e Restauração: Permite fazer backup e restaurar bancos de dados, embora com algumas limitações em comparação com edições pagas.
+
+4. Casos de Uso Comuns
+Desenvolvimento e Testes: Ideal para desenvolvedores que precisam de um ambiente de banco de dados para desenvolver e testar aplicações.
+
+Aplicações de Pequeno Porte: Útil para pequenas aplicações empresariais, aplicativos web e para aprendizado em cursos de banco de dados.
+
+Aprendizado: Excelente para estudantes e profissionais em formação que desejam aprender SQL e administração de banco de dados.
+
+5. Limitações Importantes
+Desempenho: Com as limitações de CPU e RAM, não é ideal para aplicações de alta carga.
+
+Suporte Técnico: Não oferece suporte técnico oficial, mas você pode encontrar ajuda na comunidade online.
+
+Recursos Avançados: Recursos como integração com Azure, análise avançada e ferramentas de BI não estão disponíveis.
+
+6. Como Começar
+Download: Você pode baixar o SQL Server Express diretamente do site da Microsoft.
+
+Instalação: Siga as instruções do assistente de instalação, escolhendo as opções que melhor atendem suas necessidades.
+
+Gerenciamento: Instale o SQL Server Management Studio (SSMS) para gerenciar seu banco de dados.
+
+7. Manutenção e Backup
+Manutenção Regular: Realizar backups regulares é essencial para garantir a integridade dos dados.
+
+Monitoramento de Performance: Utilize ferramentas de monitoramento para acompanhar o desempenho e ajustar configurações conforme necessário.
+
+8. Alternativas
+Se as limitações do SQL Server Express não atendem suas necessidades, você pode considerar outras edições do SQL Server, como o Standard ou o Enterprise, que oferecem mais recursos, embora com custos de licenciamento.
+
+Conclusão
+O SQL Server Express é uma ferramenta poderosa para desenvolvedores e pequenos projetos, oferecendo muitos recursos gratuitamente, apesar de algumas limitações. É uma ótima escolha para quem está começando com bancos de dados ou para aplicações que não exigem grandes volumes de dados e alta performance.
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+							- COMANDOS :
+
+1. SELECT
+Usado para consultar dados de uma ou mais tabelas.
+SELECT coluna1, coluna2
+FROM NomeTabela
+WHERE condicao;
+
+Exemplo: Seleciona o nome e a idade de todos os funcionários com idade maior que 30.
+SELECT Nome, Idade
+FROM Funcionarios
+WHERE Idade > 30;
+
+_______________________________________________________________________________________________________________________________________________________________________
+2. INSERT
+Usado para adicionar novos registros a uma tabela.
+INSERT INTO NomeTabela (coluna1, coluna2)
+VALUES (valor1, valor2);
+
+Exemplo: Adiciona um novo funcionário.
+INSERT INTO Funcionarios (Nome, Idade)
+VALUES ('Maria', 28);
+
+_______________________________________________________________________________________________________________________________________________________________________
+3. UPDATE
+Usado para modificar dados existentes em uma tabela.
 UPDATE NomeTabela
-SET NomeColuna = 'NovoValor'
-WHERE Condicao;  -- Certifique-se de incluir uma condição para evitar atualizar todos os registros.
+SET coluna1 = valor1, coluna2 = valor2
+WHERE condicao;
 
--- O comando DELETE é usado para remover registros de uma tabela.
--- Você pode excluir uma ou mais linhas que atendem a uma condição específica.
+Exemplo: Atualiza a idade de um funcionário.
+UPDATE Funcionarios
+SET Idade = 30
+WHERE Nome = 'Maria';
+_______________________________________________________________________________________________________________________________________________________________________
+4. DELETE
+Usado para remover registros de uma tabela.
 DELETE FROM NomeTabela
-WHERE Condicao;  -- Novamente, inclua uma condição para evitar excluir todos os registros.
+WHERE condicao;
 
--- O comando TRUNCATE é usado para remover todos os registros de uma tabela de forma rápida e eficiente.
--- Diferente do DELETE, o TRUNCATE não pode ser usado com uma condição e não registra as remoções de cada linha.
-TRUNCATE TABLE NomeTabela;  -- Todos os registros serão removidos, mas a estrutura da tabela permanecerá.
+Exemplo: Remove um funcionário da tabela.
+DELETE FROM Funcionarios
+WHERE Nome = 'Maria';
+_______________________________________________________________________________________________________________________________________________________________________
+5. TRUNCATE
+Usado para remover todos os registros de uma tabela de forma rápida, mas sem registrar cada remoção.
+TRUNCATE TABLE NomeTabela;
 
--- O comando ALTER é utilizado para modificar a estrutura de uma tabela existente.
--- Você pode adicionar, modificar ou excluir colunas, bem como alterar outros aspectos da tabela.
+Exemplo: Remove todos os registros da tabela Funcionarios.
+TRUNCATE TABLE Funcionarios;
+_______________________________________________________________________________________________________________________________________________________________________
+6. CREATE TABLE
+Usado para criar uma nova tabela no banco de dados.
+CREATE TABLE NomeTabela (
+    coluna1 TipoDeDado,
+    coluna2 TipoDeDado
+);
+
+Exemplo: Cria uma tabela para armazenar informações de funcionários.
+CREATE TABLE Funcionarios (
+    ID INT PRIMARY KEY,
+    Nome NVARCHAR(50),
+    Idade INT
+);
+_______________________________________________________________________________________________________________________________________________________________________
+7. ALTER TABLE
+Usado para modificar a estrutura de uma tabela existente.
 ALTER TABLE NomeTabela
-ADD NovaColuna TipoDeDados;  -- Exemplo de adição de uma nova coluna.
+ADD NovaColuna TipoDeDado;
 
--- O comando DROP é usado para remover uma tabela (ou outro objeto) do banco de dados.
--- Este comando exclui a tabela e todos os dados contidos nela de forma permanente.
-DROP TABLE NomeTabela;  -- A tabela e seus dados serão permanentemente excluídos.
+Exemplo: Adiciona uma coluna para armazenar a posição do funcionário.
+ALTER TABLE Funcionarios
+ADD Posicao NVARCHAR(50);
+_______________________________________________________________________________________________________________________________________________________________________
+8. DROP TABLE
+Usado para remover uma tabela do banco de dados.
+DROP TABLE NomeTabela;
+
+Exemplo: Remove a tabela Funcionarios.
+DROP TABLE Funcionarios;
+_______________________________________________________________________________________________________________________________________________________________________
+9. JOIN
+Usado para combinar registros de duas ou mais tabelas com base em uma condição relacionada.
+SELECT a.coluna1, b.coluna2
+FROM TabelaA a
+JOIN TabelaB b ON a.colunaChave = b.colunaChave;
+
+Exemplo: Combina dados de tabelas de funcionários e departamentos.
+SELECT f.Nome, d.NomeDepartamento
+FROM Funcionarios f
+JOIN Departamentos d ON f.DepartamentoID = d.ID;
+_______________________________________________________________________________________________________________________________________________________________________
+10. GROUP BY
+Usado para agrupar registros que têm valores iguais em colunas especificadas.
+SELECT coluna, COUNT(*)
+FROM NomeTabela
+GROUP BY coluna;
+
+Exemplo: Conta o número de funcionários em cada departamento.
+SELECT DepartamentoID, COUNT(*)
+FROM Funcionarios
+GROUP BY DepartamentoID;
+_______________________________________________________________________________________________________________________________________________________________________
+11. ORDER BY
+Usado para ordenar os resultados de uma consulta.
+SELECT coluna1, coluna2
+FROM NomeTabela
+ORDER BY coluna1 ASC|DESC;
+
+Exemplo: Ordena os funcionários por idade.
+SELECT Nome, Idade
+FROM Funcionarios
+ORDER BY Idade ASC;
