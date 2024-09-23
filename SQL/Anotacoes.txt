@@ -97,7 +97,7 @@ WHERE Nome = 'Maria';
 _______________________________________________________________________________________________________________________________________________________________________
 4. DELETE
 Descrição:
-O comando DELETE é utilizado para remover um ou mais registros de uma tabela. É uma ferramenta poderosa para gerenciar dados, permitindo a exclusão de informações que não são mais necessárias.
+O comando DELETE é utilizado para remover um ou mais registros de uma tabela. É uma ferramenta poderosa para gerenciar dados, permitindo a exclusão de informações que não são mais necessárias. O comando DELETE permite o uso da cláusula WHERE, o que significa que você pode especificar quais registros deseja remover da tabela.
 
 Sintaxe:
 DELETE FROM NomeTabela
@@ -131,6 +131,8 @@ O comando TRUNCATE é usado para remover todos os registros de uma tabela de for
 
 Funcionamento:
 No SQL Server, o comando TRUNCATE não apenas remove todos os registros de uma tabela, mas também redefine os valores da coluna IDENTITY(chave primária. ex: Id) (se houver). Isso significa que, após um TRUNCATE, a próxima vez que você inserir um novo registro, a coluna IDENTITY começará a contar novamente a partir do valor inicial (geralmente 1).
+
+O comando TRUNCATE não permite o uso da cláusula WHERE. Quando você utiliza TRUNCATE, ele remove todos os registros de uma tabela de uma só vez, sem a possibilidade de filtrar quais registros excluir.
 
 Observação:
 A propriedade IDENTITY é geralmente usada em colunas que são chaves primárias. Quando uma coluna é definida como IDENTITY, o SQL Server gera automaticamente um valor exclusivo para essa coluna a cada nova inserção, tornando-a ideal para ser uma chave primária.
