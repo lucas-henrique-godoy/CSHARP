@@ -96,13 +96,34 @@ SET Idade = 30
 WHERE Nome = 'Maria';
 _______________________________________________________________________________________________________________________________________________________________________
 4. DELETE
-Usado para remover registros de uma tabela.
+Descrição:
+O comando DELETE é utilizado para remover um ou mais registros de uma tabela. É uma ferramenta poderosa para gerenciar dados, permitindo a exclusão de informações que não são mais necessárias.
+
+Sintaxe:
 DELETE FROM NomeTabela
 WHERE condicao;
+NomeTabela: Especifica a tabela da qual você deseja remover os registros.
+condicao: Define quais registros devem ser excluídos. Se esta cláusula não for utilizada, todos os registros da tabela serão removidos.
 
-Exemplo: Remove um funcionário da tabela.
+Exemplo:
+Para remover um funcionário da tabela Funcionarios, onde o nome do funcionário é 'Maria':
 DELETE FROM Funcionarios
 WHERE Nome = 'Maria';
+
+Comportamento em Relação ao IDENTITY
+
+IDENTITY: Se a tabela contém uma coluna IDENTITY, a propriedade IDENTITY garante que cada novo registro inserido na tabela tenha um valor exclusivo gerado automaticamente. Por exemplo, se você tem uma coluna ID definida como IDENTITY, os valores dessa coluna serão incrementados automaticamente a cada nova inserção.
+
+Após um DELETE: Ao usar o comando DELETE, os valores da coluna IDENTITY não são redefinidos. Portanto, se você deletar um registro, como o funcionário 'Maria', cuja coluna ID tinha o valor 3, a próxima inserção ainda usará o próximo número disponível (por exemplo, 4). Isso significa que os IDs não são reutilizados, o que pode deixar lacunas nos números. Ou seja, os IDs não recomeçam do 1 após um DELETE. Para redefinir os IDs e começar a contagem do zero (ou do valor inicial), você deve usar o comando TRUNCATE.
+Pontos a Considerar
+Início da Contagem: Os IDs não recomeçam do 0 após um DELETE, mas sim do próximo valor disponível. Por exemplo, se o maior ID na tabela for 5 e você deletar o registro com ID 3, a próxima inserção será 6.
+
+Uso do TRUNCATE: O comando TRUNCATE redefine a coluna IDENTITY, fazendo com que a próxima inserção comece novamente a partir do valor inicial, que normalmente é 1.
+
+Resumo
+Uso do DELETE: Remover registros específicos de uma tabela.
+Controle: A cláusula WHERE permite especificar quais registros excluir, oferecendo controle total sobre a operação.
+Impacto no IDENTITY: O comando DELETE não redefine os valores da coluna IDENTITY, preservando a continuidade dos números, mesmo que haja lacunas.
 _______________________________________________________________________________________________________________________________________________________________________
 5. TRUNCATE
 Descrição:
