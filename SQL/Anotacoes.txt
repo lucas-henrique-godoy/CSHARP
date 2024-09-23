@@ -304,5 +304,61 @@ ROLLBACK: Desfaz alterações feitas na transação desde o último BEGIN TRAN. 
 CONCLUSÃO:
 Depois de um COMMIT, as alterações são permanentes e o ROLLBACK não pode reverter essas operações. Portanto, se você quiser manter alterações que envolvem exclusões ou alterações de dados, deve usar ROLLBACK antes de chamar COMMIT.
 
+_______________________________________________________________________________________________________________________________________________________________________
+
+- QUERY:
+-- Insere um novo registro na tabela tb_Nomes com o nome 'Lucas' e idade 27.
+INSERT INTO tb_Nomes (Nome, Idade) VALUES ('Lucas', 27);
+
+-- Insere um novo registro na tabela tb_Nomes com o nome 'Gabriel' e idade 27.
+INSERT INTO tb_Nomes (Nome, Idade) VALUES ('Gabriel', 27);
+
+-- Insere um novo registro na tabela tb_Nomes com o nome 'Wendel' e idade 27.
+INSERT INTO tb_Nomes (Nome, Idade) VALUES ('Wendel', 27);
+
+-- Insere um novo registro na tabela tb_Nomes com o nome 'Lorena' e idade 27.
+INSERT INTO tb_Nomes (Nome, Idade) VALUES ('Lorena', 27);
+
+---------------------------------------------------------------------------------------------------------------
+
+-- Seleciona e exibe todos os registros da tabela tb_Nomes.
+SELECT * FROM tb_Nomes;
+
+---------------------------------------------------------------------------------------------------------------
+
+-- Atualiza a idade do registro onde o ID é 1, definindo a idade como 30.
+UPDATE tb_Nomes
+SET
+	Idade = 30
+WHERE
+	Id = 1;
+
+---------------------------------------------------------------------------------------------------------------
+
+-- Exclui todos os registros da tabela tb_Nomes. (Nota: o comando DELETE sem WHERE remove tudo.)
+DELETE FROM tb_Nomes;
+
+---------------------------------------------------------------------------------------------------------------
+
+-- Remove todos os registros da tabela tb_Nomes e redefine os IDs (se houver).
+TRUNCATE TABLE tb_Nomes;
+
+---------------------------------------------------------------------------------------------------------------
+
+-- Adiciona uma nova coluna chamada 'Ativo' do tipo inteiro à tabela tb_Nomes.
+ALTER TABLE tb_Nomes ADD Ativo INT;
+
+---------------------------------------------------------------------------------------------------------------
+
+-- Inicia uma transação para que as operações subsequentes possam ser revertidas, se necessário.
+BEGIN TRAN
+	-- Tenta remover a tabela tb_Nomes do banco de dados.
+	DROP TABLE tb_Nomes;
+
+-- Reverte todas as operações realizadas desde o BEGIN TRAN, neste caso, a remoção da tabela.
+ROLLBACK TRAN
+
+-- Confirma a transação. (Neste caso, não terá efeito, pois o ROLLBACK foi executado antes.)
+COMMIT TRAN
 
 
