@@ -109,7 +109,7 @@ Descrição:
 O comando TRUNCATE é usado para remover todos os registros de uma tabela de forma rápida, sem registrar cada remoção individualmente.
 
 Funcionamento:
-No SQL Server, o comando TRUNCATE não apenas remove todos os registros de uma tabela, mas também redefine os valores da coluna IDENTITY (se houver). Isso significa que, após um TRUNCATE, a próxima vez que você inserir um novo registro, a coluna IDENTITY começará a contar novamente a partir do valor inicial (geralmente 1).
+No SQL Server, o comando TRUNCATE não apenas remove todos os registros de uma tabela, mas também redefine os valores da coluna IDENTITY(chave primária. ex: Id) (se houver). Isso significa que, após um TRUNCATE, a próxima vez que você inserir um novo registro, a coluna IDENTITY começará a contar novamente a partir do valor inicial (geralmente 1).
 
 Observação:
 A propriedade IDENTITY é geralmente usada em colunas que são chaves primárias. Quando uma coluna é definida como IDENTITY, o SQL Server gera automaticamente um valor exclusivo para essa coluna a cada nova inserção, tornando-a ideal para ser uma chave primária.
