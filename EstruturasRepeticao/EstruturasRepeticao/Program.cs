@@ -60,7 +60,7 @@ namespace EstruturasRepeticao
             */
 
             //______________________________________________________________
-            string nomeRaiz = "Pessoa";
+            /*string nomeRaiz = "Pessoa";
 
             while (loop) 
             { 
@@ -74,14 +74,35 @@ namespace EstruturasRepeticao
                     i++;
                 }                
             }
+            */
             //______________________________________________________________
 
-            //DO WHILE
+            /*DO WHILE
             do
             {
                 loop = true;
 
             }while (loop);
+            */
+
+            //______________________________________________________________
+
+            // FOREACH
+
+            int[] numeros = new int[] { 10, 22, 30, 40, 50, 60, 90, 100 };
+
+            int[] numereções = new int[10];
+
+            List<Pessoa> pessoas = new List<Pessoa>();
+
+            for (int i = 0; i < 2; i++) 
+            {
+                Pessoa pessoa = new Pessoa();
+                pessoa.Nome = "Lucas" + i;
+                pessoa.Idade = i;
+                pessoas.Add(pessoa);
+            }
+
 
             Console.ReadKey();
         }
