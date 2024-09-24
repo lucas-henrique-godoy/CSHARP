@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EstruturasRepeticao
 {
@@ -10,6 +7,7 @@ namespace EstruturasRepeticao
     {
         static void Main(string[] args)
         {
+            // Declaração de variáveis
             string nome = "Pessoa";
             int idade = 18;
             float decibeis = 15.14f;
@@ -17,39 +15,36 @@ namespace EstruturasRepeticao
             bool verdade = true;
             var nsei = 0;
 
+            // ESTRUTURAS DE REPETIÇÃO
 
-            // ESTRUTURAS DE REPETIÇÃO.
-
-            /*FOR
-            for (int i = 0; i < 5;i++)
-            {
-                Console.WriteLine(i);                
-            }*/
-
-            //______________________________________________________________
-
-            //WHILE
-            // USANDO IF JUNTO DO WHILE 
-            bool loop = false;
-            
-             int i = 0;
+            // FOR
             /*
-             while (loop)
-             {
-                 if(i == 5)
-                 {
-                     loop = false;
-                 }
-                 Console.WriteLine(i);
-                 i++;
-             }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine(i);
+            }
             */
 
-            //______________________________________________________________
+            // WHILE
+            // USANDO IF JUNTO DO WHILE 
+            /*
+            bool loop = false;
+            int i = 0;
 
-            //MANIERA CONVENCIONAL DE USO DO WHILE
+            while (loop)
+            {
+                if (i == 5)
+                {
+                    loop = false;
+                }
+                Console.WriteLine(i);
+                i++;
+            }
+            */
 
-            /*int i = 0;
+            // MANEIRA CONVENCIONAL DE USO DO WHILE
+            /*
+            int i = 0;
 
             while (i < 5) // Continua enquanto 'i' for menor que 5
             {
@@ -59,60 +54,45 @@ namespace EstruturasRepeticao
             Console.WriteLine(i); // Imprime 5 fora do loop
             */
 
-            //______________________________________________________________
-            /*string nomeRaiz = "Pessoa";
+            // DO WHILE
+            /*
+            bool loop = true;
 
-            while (loop) 
-            { 
-                nome = nomeRaiz + i.ToString();
-                if (nome == "Pessoa3")
-                {
-                    loop = false;
-                }
-                else
-                {
-                    i++;
-                }                
-            }
-            */
-            //______________________________________________________________
-
-            /*DO WHILE
             do
             {
-                loop = true;
-
-            }while (loop);
+                // Código aqui
+            } while (loop);
             */
 
-            //______________________________________________________________
-
             // FOREACH
-
+            /*
             int[] numeros = new int[] { 10, 22, 30, 40, 50, 60, 90, 100 };
 
-            foreach(int numero in numeros)
+            foreach (int numero in numeros)
             {
                 Console.WriteLine(numero);
             }
+            */
 
+            // Criando e manipulando a lista de pessoas
+            List<Pessoa> pessoas = new List<Pessoa>();
 
-            /*List<Pessoa> pessoas = new List<Pessoa>();
-
-            for (int i = 0; i < 2; i++) 
+            for (int i = 0; i < 2; i++)
             {
-                Pessoa pessoa = new Pessoa();
-                pessoa.Nome = "Lucas" + i;
-                pessoa.Idade = i;
+                Pessoa pessoa = new Pessoa
+                {
+                    Nome = "Lucas" + i,
+                    Idade = i
+                };
                 pessoas.Add(pessoa);
             }
 
             foreach (Pessoa pessoa in pessoas)
             {
-                Console.WriteLine("Nome: " + pessoa.Nome + "Idade: " + pessoa.Idade);
+                Console.WriteLine("Nome: " + pessoa.Nome + " Idade: " + pessoa.Idade);
             }
-            */
 
             Console.ReadKey();
         }
-}   }
+    }
+}
