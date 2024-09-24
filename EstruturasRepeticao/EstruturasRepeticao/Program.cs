@@ -91,9 +91,13 @@ namespace EstruturasRepeticao
 
             int[] numeros = new int[] { 10, 22, 30, 40, 50, 60, 90, 100 };
 
-            int[] numereções = new int[10];
+            foreach(int numero in numeros)
+            {
+                Console.WriteLine(numero);
+            }
 
-            List<Pessoa> pessoas = new List<Pessoa>();
+
+            /*List<Pessoa> pessoas = new List<Pessoa>();
 
             for (int i = 0; i < 2; i++) 
             {
@@ -103,6 +107,11 @@ namespace EstruturasRepeticao
                 pessoas.Add(pessoa);
             }
 
+            foreach (Pessoa pessoa in pessoas)
+            {
+                Console.WriteLine("Nome: " + pessoa.Nome + "Idade: " + pessoa.Idade);
+            }
+            */
 
             Console.ReadKey();
         }
