@@ -7,14 +7,14 @@ namespace EstruturasRepeticao
     {
         static void Main(string[] args)
         {
-            // Declaração de variáveis
+            /* Declaração de variáveis
             string nome = "Pessoa";
             int idade = 18;
             float decibeis = 15.14f;
             double salario = 10.50;
             bool verdade = true;
             var nsei = 0;
-
+            */
             // ESTRUTURAS DE REPETIÇÃO
 
             // FOR
@@ -75,24 +75,35 @@ namespace EstruturasRepeticao
             */
 
             // Criando e manipulando a lista de pessoas
+            // Cria uma nova lista chamada 'pessoas' que irá armazenar objetos do tipo 'Pessoa'
             List<Pessoa> pessoas = new List<Pessoa>();
 
+            // Laço for para criar 2 instâncias da classe 'Pessoa'
             for (int i = 0; i < 2; i++)
             {
-                Pessoa pessoa = new Pessoa
-                {
-                    Nome = "Lucas" + i,
-                    Idade = i
-                };
+                // Cria uma nova instância de 'Pessoa'
+                Pessoa pessoa = new Pessoa();
+
+                // Define o nome da pessoa, concatenando "Lucas" com o índice 'i' (0 ou 1)
+                pessoa.Nome = "Lucas" + i;
+
+                // Define a idade da pessoa como o valor do índice 'i' (0 ou 1)
+                pessoa.Idade = i;
+
+                // Adiciona a instância 'pessoa' à lista 'pessoas'
                 pessoas.Add(pessoa);
             }
 
+            // Laço foreach para iterar sobre cada 'pessoa' na lista 'pessoas'
             foreach (Pessoa pessoa in pessoas)
             {
-                Console.WriteLine("Nome: " + pessoa.Nome + " Idade: " + pessoa.Idade);
+                // Imprime o nome e a idade de cada pessoa na lista
+                Console.WriteLine("Nome: " + pessoa.Nome + " / Idade: " + pessoa.Idade);
             }
 
+            // Aguarda o usuário pressionar uma tecla antes de fechar o console
             Console.ReadKey();
+
         }
     }
 }
