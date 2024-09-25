@@ -9,5 +9,7 @@ namespace EstruturasDecisao
     public class Endereco
     {
 
+
+
     }
 }

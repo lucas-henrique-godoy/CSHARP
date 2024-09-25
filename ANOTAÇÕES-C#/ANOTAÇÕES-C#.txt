@@ -394,6 +394,7 @@ public class Quadrado : Forma
 }
 Conclusão
 A orientação a objetos em C# permite estruturar seu código de maneira mais intuitiva e organizada. Esses princípios ajudam a criar software que é mais fácil de manter e escalar. 
+_______________________________________________________________________________________________________________________________________________________________________
 
 INTERNAL CLASS: Em C#, uma internal class é uma classe que é acessível apenas dentro do mesmo assembly em que foi definida. Isso significa que outras partes do código, que estão em assemblies diferentes, não conseguem ver ou usar essa classe.
 
@@ -432,5 +433,16 @@ Quando Usar internal:
 Quando você deseja ocultar implementações que não precisam ser expostas a outros assemblies.
 Quando você está criando bibliotecas e quer controlar o que é acessível externamente.
 Para melhorar a organização e a segurança do código.
+
+_______________________________________________________________________________________________________________________________________________________________________
+MINHAS EXPLICAÇÕESS SIMPLIFICADAS:
+
+- NAMESPACE: É onde a classe está localizada. Ou seja, aonde que eu tenho que referenciar uma classe para eu poder achar ela dentro do meu código.
+
+- INTERNAL CLASS: A classe só pode ser  referenciada dentro dela mesma. Eu não posso utilizar em outros lugares. 
+
+- PUBLIC CLASS: As outras classes do meu código/projeto conseguem enxergar essa classe. 
+
+-ENCAPSULAMENTO:  Dentro dos Atributos tem o Encapsulamento, que vai dizer se aquela variável pode ser vista em outro código ou não.
 
 
