@@ -297,3 +297,140 @@ E criei um banco chamado Debugand_C e uma tabela chamada tb_Nomes, que contém o
 INSERT INTO tb_Nomes VALUES ('Lucas')
 
 SELECT * FROM tb_Nomes
+
+_______________________________________________________________________________________________________________________________________________________________________
+				
+					PROGRAMAÇÃO ORIENTADA A OBJETOS
+				
+				
+A orientação a objetos (OO) é um paradigma de programação que utiliza "objetos" para representar dados e métodos. Em C#, a OO se baseia em quatro princípios fundamentais: encapsulamento, herança, polimorfismo e abstração. Vamos detalhar cada um deles:
+
+1. Encapsulamento
+O encapsulamento refere-se à prática de esconder os detalhes internos de um objeto e expor apenas o que é necessário. Isso é feito através de modificadores de acesso.
+
+Exemplo:
+
+csharp
+Copiar código
+public class ContaBancaria
+{
+    private decimal saldo; // Atributo privado
+
+    public void Depositar(decimal valor)
+    {
+        saldo += valor; // Método público para modificar o saldo
+    }
+
+    public decimal ObterSaldo()
+    {
+        return saldo; // Método público para acessar o saldo
+    }
+}
+2. Herança
+A herança permite que uma classe derive de outra, herdando seus atributos e métodos. Isso promove a reutilização de código e a criação de hierarquias de classes.
+
+Exemplo:
+
+csharp
+Copiar código
+public class ContaBancaria
+{
+    public decimal Saldo { get; protected set; }
+
+    public virtual void Depositar(decimal valor)
+    {
+        Saldo += valor;
+    }
+}
+
+public class ContaPoupanca : ContaBancaria // Herda de ContaBancaria
+{
+    public override void Depositar(decimal valor)
+    {
+        base.Depositar(valor); // Chama o método da classe base
+        // Adiciona lógica específica para ContaPoupanca
+    }
+}
+3. Polimorfismo
+O polimorfismo permite que métodos em diferentes classes sejam chamados de maneira intercambiável, mesmo que suas implementações sejam diferentes. Isso é geralmente alcançado através de interfaces ou classes abstratas.
+
+Exemplo:
+
+csharp
+Copiar código
+public interface IForma
+{
+    double CalcularArea();
+}
+
+public class Circulo : IForma
+{
+    public double Raio { get; set; }
+    public double CalcularArea() => Math.PI * Raio * Raio;
+}
+
+public class Retangulo : IForma
+{
+    public double Largura { get; set; }
+    public double Altura { get; set; }
+    public double CalcularArea() => Largura * Altura;
+}
+4. Abstração
+A abstração permite que você represente conceitos complexos de forma simplificada, focando nos aspectos relevantes e ocultando os detalhes desnecessários. Isso é feito através de classes abstratas e interfaces.
+
+Exemplo:
+
+csharp
+Copiar código
+public abstract class Forma // Classe abstrata
+{
+    public abstract double CalcularArea(); // Método abstrato
+}
+
+public class Quadrado : Forma
+{
+    public double Lado { get; set; }
+    public override double CalcularArea() => Lado * Lado;
+}
+Conclusão
+A orientação a objetos em C# permite estruturar seu código de maneira mais intuitiva e organizada. Esses princípios ajudam a criar software que é mais fácil de manter e escalar. 
+
+INTERNAL CLASS: Em C#, uma internal class é uma classe que é acessível apenas dentro do mesmo assembly em que foi definida. Isso significa que outras partes do código, que estão em assemblies diferentes, não conseguem ver ou usar essa classe.
+
+Principais Características de uma internal class:
+Escopo de Acesso: A classe é visível apenas para o código que reside no mesmo projeto (ou assembly). Se você tentar acessar essa classe de outro projeto, ocorrerá um erro de compilação.
+
+Encapsulamento: O uso de internal é uma maneira de encapsular e proteger implementações internas que não devem ser expostas a outros assemblies. Isso ajuda a manter a integridade do código.
+
+Default Modifier: Se você não especificar um modificador de acesso para uma classe em C#, ela será considerada internal por padrão, se estiver em um namespace.
+
+Exemplo de Uso:
+csharp
+Copiar código
+// Definição da classe interna
+internal class Funcionario
+{
+    public string Nome { get; set; }
+
+    public void Trabalhar()
+    {
+        Console.WriteLine($"{Nome} está trabalhando.");
+    }
+}
+
+// Essa classe pode acessar a classe Funcionario
+public class Empresa
+{
+    public void Contratar()
+    {
+        Funcionario funcionario = new Funcionario();
+        funcionario.Nome = "João";
+        funcionario.Trabalhar();
+    }
+}
+Quando Usar internal:
+Quando você deseja ocultar implementações que não precisam ser expostas a outros assemblies.
+Quando você está criando bibliotecas e quer controlar o que é acessível externamente.
+Para melhorar a organização e a segurança do código.
+
+
