@@ -8,7 +8,16 @@ namespace EstruturasDecisao
 {
     public class Endereco
     {
-        public string Logradouro { get; set; }
+        //Atributo
+        public string Logradouro { get; private set; }
+
+        //Método
+        public string AlterarEndereco(string logradouro)
+        {
+            this.Logradouro = logradouro;
+            return Logradouro;
+        }
+
 
     }
 }
