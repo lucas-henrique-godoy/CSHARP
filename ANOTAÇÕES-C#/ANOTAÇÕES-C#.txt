@@ -443,6 +443,8 @@ MINHAS EXPLICAÇÕESS SIMPLIFICADAS:
 
 - PUBLIC CLASS: As outras classes do meu código/projeto conseguem enxergar essa classe. 
 
--ENCAPSULAMENTO:  Dentro dos Atributos tem o Encapsulamento, que vai dizer se aquela variável pode ser vista em outro código/classe ou não.
+-ENCAPSULAMENTO:  Dentro dos Atributos tem o Encapsulamento, que vai dizer se aquela variável pode ser vista em outro código/classe ou não. É o tipo de permissão que damos as variáveis.
+
+
 
 

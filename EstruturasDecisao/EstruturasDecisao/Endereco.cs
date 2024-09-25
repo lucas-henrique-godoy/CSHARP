@@ -8,8 +8,7 @@ namespace EstruturasDecisao
 {
     public class Endereco
     {
-
-
+        public string Logradouro { get; set; }
 
     }
 }
