@@ -101,9 +101,6 @@ namespace EstruturasRepeticao
                 Console.WriteLine("Nome: " + pessoa.Nome + " / Idade: " + pessoa.Idade);
             }
            */
-
-                 
-
             // Aguarda o usuário pressionar uma tecla antes de fechar o console
             Console.ReadKey();
 

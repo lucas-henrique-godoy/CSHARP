@@ -450,6 +450,7 @@ MINHAS EXPLICAÇÕESS SIMPLIFICADAS:
 -GET: Visualizar o conteúdo de uma variável/Atributo.
 -SET: Alterar o conteúdo de uma variável/Atributo.
 
+-NO VISUAL STUDIO COMMUNITY A CAIXINHA É UM MÉTODO, E A CHAVE DE FERRAMENTA É UM ATRIBUTO.
 
 
 

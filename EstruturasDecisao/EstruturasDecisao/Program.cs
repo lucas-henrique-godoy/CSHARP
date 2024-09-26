@@ -54,7 +54,7 @@ namespace EstruturasDecisao
             // Chama o método AlterarEndereco na instância 'endereco', passando o novo logradouro "Rua 784"
             // O resultado da alteração é armazenado na variável 'resultado'
             string resultado = endereco.AlterarEndereco("Rua 784");
-
+            
             // Exibe o resultado no console
             Console.WriteLine(resultado);
 
