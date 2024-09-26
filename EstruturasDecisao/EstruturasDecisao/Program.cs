@@ -48,19 +48,18 @@ namespace EstruturasDecisao
 
 
             //OBJETO
-            // Cria uma nova instância do objeto Endereco
-            Endereco endereco = new Endereco();
-
-            // Chama o método AlterarEndereco na instância 'endereco', passando o novo logradouro "Rua 784"
-            // O resultado da alteração é armazenado na variável 'resultado'
-            string resultado = endereco.AlterarEndereco("Rua 784");
             
-            // Exibe o resultado no console
+            Endereco endereco = new Endereco("Leme", "São Paulo", 135020 , "Rua 20 de Julho");
+
+            string resultado = endereco.ShowValues();            
+            
+       
             Console.WriteLine(resultado);
 
 
 
-            Console.ReadKey(); // Aguarda uma tecla ser pressionada antes de fechar
+            Console.ReadKey();
+            // Aguarda uma tecla ser pressionada antes de fechar
         }
     }
 }

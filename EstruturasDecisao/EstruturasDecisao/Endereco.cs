@@ -6,14 +6,32 @@ using System.Threading.Tasks;
 
 namespace EstruturasDecisao
 {
-    public class Endereco
+    public class Endereco : Cidade
     {
         public string Logradouro { get; private set; }
+
+        public Endereco(string nomeCidade, string nomeEstado) : base(nomeCidade, nomeEstado)
+        {
+            this.numCep = 1500309;
+        }
+
+        public Endereco(string nomeCidade, string nomeEstado, int numCep, string nomeLogradouro) : base(nomeCidade, nomeEstado, numCep)
+        {
+            this.Logradouro = nomeLogradouro;
+        }
+
+        
 
         public string AlterarEndereco(string logradouro)
         {
             this.Logradouro = logradouro;
             return Logradouro;
+        }
+
+        public string ShowValues()
+        {
+            string enderecoCompleto = this.Logradouro + " / " + this.nomeEstado +  " / " + this.numCep + " / " + this.nomeCidade;
+            return enderecoCompleto;
         }
     }
 }
