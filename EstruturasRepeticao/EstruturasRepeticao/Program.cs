@@ -76,7 +76,7 @@ namespace EstruturasRepeticao
 
             // Criando e manipulando a lista de pessoas
             // Cria uma nova lista chamada 'pessoas' que irá armazenar objetos do tipo 'Pessoa'
-            List<Pessoa> pessoas = new List<Pessoa>();
+           /* List<Pessoa> pessoas = new List<Pessoa>();
 
             // Laço for para criar 2 instâncias da classe 'Pessoa'
             for (int i = 0; i < 2; i++)
@@ -100,6 +100,9 @@ namespace EstruturasRepeticao
                 // Imprime o nome e a idade de cada pessoa na lista
                 Console.WriteLine("Nome: " + pessoa.Nome + " / Idade: " + pessoa.Idade);
             }
+           */
+
+                 
 
             // Aguarda o usuário pressionar uma tecla antes de fechar o console
             Console.ReadKey();

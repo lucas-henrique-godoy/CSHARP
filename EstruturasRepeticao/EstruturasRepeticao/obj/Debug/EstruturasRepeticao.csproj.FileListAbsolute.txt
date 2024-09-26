@@ -5,3 +5,10 @@ C:\Users\lucasgodoy\Desktop\CSHARP\EstruturasRepeticao\EstruturasRepeticao\obj\D
 C:\Users\lucasgodoy\Desktop\CSHARP\EstruturasRepeticao\EstruturasRepeticao\obj\Debug\EstruturasRepeticao.csproj.CoreCompileInputs.cache
 C:\Users\lucasgodoy\Desktop\CSHARP\EstruturasRepeticao\EstruturasRepeticao\obj\Debug\EstruturasRepeticao.exe
 C:\Users\lucasgodoy\Desktop\CSHARP\EstruturasRepeticao\EstruturasRepeticao\obj\Debug\EstruturasRepeticao.pdb
+C:\Users\lucas\OneDrive\Área de Trabalho\CSHARP\EstruturasRepeticao\EstruturasRepeticao\bin\Debug\EstruturasRepeticao.exe.config
+C:\Users\lucas\OneDrive\Área de Trabalho\CSHARP\EstruturasRepeticao\EstruturasRepeticao\bin\Debug\EstruturasRepeticao.exe
+C:\Users\lucas\OneDrive\Área de Trabalho\CSHARP\EstruturasRepeticao\EstruturasRepeticao\bin\Debug\EstruturasRepeticao.pdb
+C:\Users\lucas\OneDrive\Área de Trabalho\CSHARP\EstruturasRepeticao\EstruturasRepeticao\obj\Debug\EstruturasRepeticao.csproj.AssemblyReference.cache
+C:\Users\lucas\OneDrive\Área de Trabalho\CSHARP\EstruturasRepeticao\EstruturasRepeticao\obj\Debug\EstruturasRepeticao.csproj.CoreCompileInputs.cache
+C:\Users\lucas\OneDrive\Área de Trabalho\CSHARP\EstruturasRepeticao\EstruturasRepeticao\obj\Debug\EstruturasRepeticao.exe
+C:\Users\lucas\OneDrive\Área de Trabalho\CSHARP\EstruturasRepeticao\EstruturasRepeticao\obj\Debug\EstruturasRepeticao.pdb
