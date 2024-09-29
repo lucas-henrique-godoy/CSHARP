@@ -1,0 +1,9 @@
+C:\Users\lucas\OneDrive\Área de Trabalho\CSHARP\CadastroUsuario\CadastroUsuario\bin\Debug\CadastroUsuario.exe.config
+C:\Users\lucas\OneDrive\Área de Trabalho\CSHARP\CadastroUsuario\CadastroUsuario\bin\Debug\CadastroUsuario.exe
+C:\Users\lucas\OneDrive\Área de Trabalho\CSHARP\CadastroUsuario\CadastroUsuario\bin\Debug\CadastroUsuario.pdb
+C:\Users\lucas\OneDrive\Área de Trabalho\CSHARP\CadastroUsuario\CadastroUsuario\obj\Debug\CadastroUsuario.csproj.AssemblyReference.cache
+C:\Users\lucas\OneDrive\Área de Trabalho\CSHARP\CadastroUsuario\CadastroUsuario\obj\Debug\CadastroUsuario.Properties.Resources.resources
+C:\Users\lucas\OneDrive\Área de Trabalho\CSHARP\CadastroUsuario\CadastroUsuario\obj\Debug\CadastroUsuario.csproj.GenerateResource.cache
+C:\Users\lucas\OneDrive\Área de Trabalho\CSHARP\CadastroUsuario\CadastroUsuario\obj\Debug\CadastroUsuario.csproj.CoreCompileInputs.cache
+C:\Users\lucas\OneDrive\Área de Trabalho\CSHARP\CadastroUsuario\CadastroUsuario\obj\Debug\CadastroUsuario.exe
+C:\Users\lucas\OneDrive\Área de Trabalho\CSHARP\CadastroUsuario\CadastroUsuario\obj\Debug\CadastroUsuario.pdb
