@@ -31,9 +31,12 @@ namespace CadastroUsuario
         {
 
         }
-
+        // Método que é chamado quando o botão "Salvar" é clicado.
         private void btn_Salvar_Click(object sender, EventArgs e)
         {
+            // A linha abaixo faz o seguinte:
+            // Atribui o valor do texto que está no campo de entrada (txt_Nome)
+            // ao texto que será exibido no rótulo (lbl_Resultado).
             lbl_Resultado.Text = txt_Nome.Text;
         }
 
