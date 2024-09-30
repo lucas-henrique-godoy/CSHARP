@@ -7,4 +7,4 @@ C:\Users\lucas\OneDrive\Área de Trabalho\CSHARP\CadastroUsuario\CadastroUsuario
 C:\Users\lucas\OneDrive\Área de Trabalho\CSHARP\CadastroUsuario\CadastroUsuario\obj\Debug\CadastroUsuario.csproj.CoreCompileInputs.cache
 C:\Users\lucas\OneDrive\Área de Trabalho\CSHARP\CadastroUsuario\CadastroUsuario\obj\Debug\CadastroUsuario.exe
 C:\Users\lucas\OneDrive\Área de Trabalho\CSHARP\CadastroUsuario\CadastroUsuario\obj\Debug\CadastroUsuario.pdb
-C:\Users\lucas\OneDrive\Área de Trabalho\CSHARP\CadastroUsuario\CadastroUsuario\obj\Debug\CadastroUsuario.Form1.resources
+C:\Users\lucas\OneDrive\Área de Trabalho\CSHARP\CadastroUsuario\CadastroUsuario\obj\Debug\CadastroUsuario.Frm_Cadastro.resources
