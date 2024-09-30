@@ -33,15 +33,15 @@
             this.lbl_CPF = new System.Windows.Forms.Label();
             this.lbl_Telefone = new System.Windows.Forms.Label();
             this.lbl_Endereco = new System.Windows.Forms.Label();
-            this.txt_Nome = new System.Windows.Forms.TextBox();
+            this.txt_nome = new System.Windows.Forms.TextBox();
             this.txt_Endereco = new System.Windows.Forms.TextBox();
             this.lbl_Resultado = new System.Windows.Forms.Label();
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.btn_Salvar = new System.Windows.Forms.Button();
             this.lbl_Usuarios = new System.Windows.Forms.ListBox();
-            this.dtP_DataNascimento = new System.Windows.Forms.DateTimePicker();
-            this.mtb_CPF = new System.Windows.Forms.MaskedTextBox();
-            this.mtb_Telefone = new System.Windows.Forms.MaskedTextBox();
+            this.dtp_Nascimento = new System.Windows.Forms.DateTimePicker();
+            this.mtxt_CPF = new System.Windows.Forms.MaskedTextBox();
+            this.mtxt_Telefone = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // lbl_Nome
@@ -62,7 +62,6 @@
             this.lbl_Data_Nascimento.Size = new System.Drawing.Size(89, 13);
             this.lbl_Data_Nascimento.TabIndex = 1;
             this.lbl_Data_Nascimento.Text = "Data Nascimento";
-            this.lbl_Data_Nascimento.Click += new System.EventHandler(this.lbl_Idade_Click);
             // 
             // lbl_CPF
             // 
@@ -93,12 +92,12 @@
             this.lbl_Endereco.Text = "Endereço";
             this.lbl_Endereco.Click += new System.EventHandler(this.label5_Click);
             // 
-            // txt_Nome
+            // txt_nome
             // 
-            this.txt_Nome.Location = new System.Drawing.Point(24, 30);
-            this.txt_Nome.Name = "txt_Nome";
-            this.txt_Nome.Size = new System.Drawing.Size(287, 20);
-            this.txt_Nome.TabIndex = 5;
+            this.txt_nome.Location = new System.Drawing.Point(24, 30);
+            this.txt_nome.Name = "txt_nome";
+            this.txt_nome.Size = new System.Drawing.Size(287, 20);
+            this.txt_nome.TabIndex = 5;
             // 
             // txt_Endereco
             // 
@@ -143,44 +142,44 @@
             this.lbl_Usuarios.Size = new System.Drawing.Size(240, 173);
             this.lbl_Usuarios.TabIndex = 13;
             // 
-            // dtP_DataNascimento
+            // dtp_Nascimento
             // 
-            this.dtP_DataNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtP_DataNascimento.Location = new System.Drawing.Point(27, 81);
-            this.dtP_DataNascimento.Name = "dtP_DataNascimento";
-            this.dtP_DataNascimento.Size = new System.Drawing.Size(104, 20);
-            this.dtP_DataNascimento.TabIndex = 14;
+            this.dtp_Nascimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_Nascimento.Location = new System.Drawing.Point(27, 81);
+            this.dtp_Nascimento.Name = "dtp_Nascimento";
+            this.dtp_Nascimento.Size = new System.Drawing.Size(104, 20);
+            this.dtp_Nascimento.TabIndex = 14;
             // 
-            // mtb_CPF
+            // mtxt_CPF
             // 
-            this.mtb_CPF.Location = new System.Drawing.Point(211, 84);
-            this.mtb_CPF.Mask = "000.000.000-00";
-            this.mtb_CPF.Name = "mtb_CPF";
-            this.mtb_CPF.Size = new System.Drawing.Size(100, 20);
-            this.mtb_CPF.TabIndex = 15;
+            this.mtxt_CPF.Location = new System.Drawing.Point(211, 84);
+            this.mtxt_CPF.Mask = "000.000.000-00";
+            this.mtxt_CPF.Name = "mtxt_CPF";
+            this.mtxt_CPF.Size = new System.Drawing.Size(100, 20);
+            this.mtxt_CPF.TabIndex = 15;
             // 
-            // mtb_Telefone
+            // mtxt_Telefone
             // 
-            this.mtb_Telefone.Location = new System.Drawing.Point(27, 132);
-            this.mtb_Telefone.Mask = "(00)00000-0000";
-            this.mtb_Telefone.Name = "mtb_Telefone";
-            this.mtb_Telefone.Size = new System.Drawing.Size(100, 20);
-            this.mtb_Telefone.TabIndex = 16;
+            this.mtxt_Telefone.Location = new System.Drawing.Point(27, 132);
+            this.mtxt_Telefone.Mask = "(00)00000-0000";
+            this.mtxt_Telefone.Name = "mtxt_Telefone";
+            this.mtxt_Telefone.Size = new System.Drawing.Size(100, 20);
+            this.mtxt_Telefone.TabIndex = 16;
             // 
             // Frm_Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(599, 253);
-            this.Controls.Add(this.mtb_Telefone);
-            this.Controls.Add(this.mtb_CPF);
-            this.Controls.Add(this.dtP_DataNascimento);
+            this.Controls.Add(this.mtxt_Telefone);
+            this.Controls.Add(this.mtxt_CPF);
+            this.Controls.Add(this.dtp_Nascimento);
             this.Controls.Add(this.lbl_Usuarios);
             this.Controls.Add(this.btn_Salvar);
             this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.lbl_Resultado);
             this.Controls.Add(this.txt_Endereco);
-            this.Controls.Add(this.txt_Nome);
+            this.Controls.Add(this.txt_nome);
             this.Controls.Add(this.lbl_Endereco);
             this.Controls.Add(this.lbl_Telefone);
             this.Controls.Add(this.lbl_CPF);
@@ -200,15 +199,15 @@
         private System.Windows.Forms.Label lbl_CPF;
         private System.Windows.Forms.Label lbl_Telefone;
         private System.Windows.Forms.Label lbl_Endereco;
-        private System.Windows.Forms.TextBox txt_Nome;
+        private System.Windows.Forms.TextBox txt_nome;
         private System.Windows.Forms.TextBox txt_Endereco;
         private System.Windows.Forms.Label lbl_Resultado;
         private System.Windows.Forms.Button btn_Cancelar;
         private System.Windows.Forms.Button btn_Salvar;
         private System.Windows.Forms.ListBox lbl_Usuarios;
-        private System.Windows.Forms.DateTimePicker dtP_DataNascimento;
-        private System.Windows.Forms.MaskedTextBox mtb_CPF;
-        private System.Windows.Forms.MaskedTextBox mtb_Telefone;
+        private System.Windows.Forms.DateTimePicker dtp_Nascimento;
+        private System.Windows.Forms.MaskedTextBox mtxt_CPF;
+        private System.Windows.Forms.MaskedTextBox mtxt_Telefone;
     }
 }
 

@@ -19,5 +19,7 @@ namespace CadastroUsuario.Model
         public string telefone {  get; set; }
 
         public string endereco { get; set; }
+
+        
     }
 }
