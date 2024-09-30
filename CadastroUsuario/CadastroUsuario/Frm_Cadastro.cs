@@ -31,5 +31,15 @@ namespace CadastroUsuario
         {
 
         }
+
+        private void btn_Salvar_Click(object sender, EventArgs e)
+        {
+            lbl_Resultado.Text = txt_Nome.Text;
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

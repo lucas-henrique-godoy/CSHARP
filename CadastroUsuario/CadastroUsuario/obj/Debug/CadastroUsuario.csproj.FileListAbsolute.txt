@@ -8,3 +8,13 @@ C:\Users\lucas\OneDrive\Área de Trabalho\CSHARP\CadastroUsuario\CadastroUsuario
 C:\Users\lucas\OneDrive\Área de Trabalho\CSHARP\CadastroUsuario\CadastroUsuario\obj\Debug\CadastroUsuario.exe
 C:\Users\lucas\OneDrive\Área de Trabalho\CSHARP\CadastroUsuario\CadastroUsuario\obj\Debug\CadastroUsuario.pdb
 C:\Users\lucas\OneDrive\Área de Trabalho\CSHARP\CadastroUsuario\CadastroUsuario\obj\Debug\CadastroUsuario.Frm_Cadastro.resources
+C:\Users\lucasgodoy\Desktop\CSHARP\CadastroUsuario\CadastroUsuario\bin\Debug\CadastroUsuario.exe.config
+C:\Users\lucasgodoy\Desktop\CSHARP\CadastroUsuario\CadastroUsuario\bin\Debug\CadastroUsuario.exe
+C:\Users\lucasgodoy\Desktop\CSHARP\CadastroUsuario\CadastroUsuario\bin\Debug\CadastroUsuario.pdb
+C:\Users\lucasgodoy\Desktop\CSHARP\CadastroUsuario\CadastroUsuario\obj\Debug\CadastroUsuario.csproj.AssemblyReference.cache
+C:\Users\lucasgodoy\Desktop\CSHARP\CadastroUsuario\CadastroUsuario\obj\Debug\CadastroUsuario.Frm_Cadastro.resources
+C:\Users\lucasgodoy\Desktop\CSHARP\CadastroUsuario\CadastroUsuario\obj\Debug\CadastroUsuario.Properties.Resources.resources
+C:\Users\lucasgodoy\Desktop\CSHARP\CadastroUsuario\CadastroUsuario\obj\Debug\CadastroUsuario.csproj.GenerateResource.cache
+C:\Users\lucasgodoy\Desktop\CSHARP\CadastroUsuario\CadastroUsuario\obj\Debug\CadastroUsuario.csproj.CoreCompileInputs.cache
+C:\Users\lucasgodoy\Desktop\CSHARP\CadastroUsuario\CadastroUsuario\obj\Debug\CadastroUsuario.exe
+C:\Users\lucasgodoy\Desktop\CSHARP\CadastroUsuario\CadastroUsuario\obj\Debug\CadastroUsuario.pdb
