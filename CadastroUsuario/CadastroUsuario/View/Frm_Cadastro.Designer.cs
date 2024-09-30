@@ -39,9 +39,9 @@
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.btn_Salvar = new System.Windows.Forms.Button();
             this.lbl_Usuarios = new System.Windows.Forms.ListBox();
-            this.dt_Data_Nascimento = new System.Windows.Forms.DateTimePicker();
-            this.mtxt_CPF = new System.Windows.Forms.MaskedTextBox();
-            this.mtxt_Telefone = new System.Windows.Forms.MaskedTextBox();
+            this.dtP_DataNascimento = new System.Windows.Forms.DateTimePicker();
+            this.mtb_CPF = new System.Windows.Forms.MaskedTextBox();
+            this.mtb_Telefone = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // lbl_Nome
@@ -143,38 +143,38 @@
             this.lbl_Usuarios.Size = new System.Drawing.Size(240, 173);
             this.lbl_Usuarios.TabIndex = 13;
             // 
-            // dt_Data_Nascimento
+            // dtP_DataNascimento
             // 
-            this.dt_Data_Nascimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dt_Data_Nascimento.Location = new System.Drawing.Point(27, 81);
-            this.dt_Data_Nascimento.Name = "dt_Data_Nascimento";
-            this.dt_Data_Nascimento.Size = new System.Drawing.Size(104, 20);
-            this.dt_Data_Nascimento.TabIndex = 14;
+            this.dtP_DataNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtP_DataNascimento.Location = new System.Drawing.Point(27, 81);
+            this.dtP_DataNascimento.Name = "dtP_DataNascimento";
+            this.dtP_DataNascimento.Size = new System.Drawing.Size(104, 20);
+            this.dtP_DataNascimento.TabIndex = 14;
             // 
-            // mtxt_CPF
+            // mtb_CPF
             // 
-            this.mtxt_CPF.Location = new System.Drawing.Point(211, 84);
-            this.mtxt_CPF.Mask = "000.000.000-00";
-            this.mtxt_CPF.Name = "mtxt_CPF";
-            this.mtxt_CPF.Size = new System.Drawing.Size(100, 20);
-            this.mtxt_CPF.TabIndex = 15;
+            this.mtb_CPF.Location = new System.Drawing.Point(211, 84);
+            this.mtb_CPF.Mask = "000.000.000-00";
+            this.mtb_CPF.Name = "mtb_CPF";
+            this.mtb_CPF.Size = new System.Drawing.Size(100, 20);
+            this.mtb_CPF.TabIndex = 15;
             // 
-            // mtxt_Telefone
+            // mtb_Telefone
             // 
-            this.mtxt_Telefone.Location = new System.Drawing.Point(27, 132);
-            this.mtxt_Telefone.Mask = "(00)00000-0000";
-            this.mtxt_Telefone.Name = "mtxt_Telefone";
-            this.mtxt_Telefone.Size = new System.Drawing.Size(100, 20);
-            this.mtxt_Telefone.TabIndex = 16;
+            this.mtb_Telefone.Location = new System.Drawing.Point(27, 132);
+            this.mtb_Telefone.Mask = "(00)00000-0000";
+            this.mtb_Telefone.Name = "mtb_Telefone";
+            this.mtb_Telefone.Size = new System.Drawing.Size(100, 20);
+            this.mtb_Telefone.TabIndex = 16;
             // 
             // Frm_Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(599, 253);
-            this.Controls.Add(this.mtxt_Telefone);
-            this.Controls.Add(this.mtxt_CPF);
-            this.Controls.Add(this.dt_Data_Nascimento);
+            this.Controls.Add(this.mtb_Telefone);
+            this.Controls.Add(this.mtb_CPF);
+            this.Controls.Add(this.dtP_DataNascimento);
             this.Controls.Add(this.lbl_Usuarios);
             this.Controls.Add(this.btn_Salvar);
             this.Controls.Add(this.btn_Cancelar);
@@ -206,9 +206,9 @@
         private System.Windows.Forms.Button btn_Cancelar;
         private System.Windows.Forms.Button btn_Salvar;
         private System.Windows.Forms.ListBox lbl_Usuarios;
-        private System.Windows.Forms.DateTimePicker dt_Data_Nascimento;
-        private System.Windows.Forms.MaskedTextBox mtxt_CPF;
-        private System.Windows.Forms.MaskedTextBox mtxt_Telefone;
+        private System.Windows.Forms.DateTimePicker dtP_DataNascimento;
+        private System.Windows.Forms.MaskedTextBox mtb_CPF;
+        private System.Windows.Forms.MaskedTextBox mtb_Telefone;
     }
 }
 
