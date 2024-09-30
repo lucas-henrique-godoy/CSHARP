@@ -80,7 +80,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Frm_Cadastro";
-            this.Text = "Casdastro";
+            this.Text = "Cadastro";
             this.ResumeLayout(false);
             this.PerformLayout();
 
