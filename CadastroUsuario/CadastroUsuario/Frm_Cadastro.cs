@@ -40,8 +40,10 @@ namespace CadastroUsuario
             lbl_Resultado.Text = txt_Nome.Text;
         }
 
+        // Método que é chamado quando o botão "Cancelar" é clicado.
         private void btn_Cancelar_Click(object sender, EventArgs e)
         {
+            // Fecha a janela atual da aplicação.
             this.Close();
         }
     }
