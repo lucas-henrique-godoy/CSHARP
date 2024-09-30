@@ -99,28 +99,28 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(3, 67);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.Size = new System.Drawing.Size(257, 20);
             this.textBox2.TabIndex = 6;
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(3, 108);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.Size = new System.Drawing.Size(257, 20);
             this.textBox3.TabIndex = 7;
             // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(3, 150);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.Size = new System.Drawing.Size(257, 20);
             this.textBox4.TabIndex = 8;
             // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(3, 199);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.Size = new System.Drawing.Size(257, 20);
             this.textBox5.TabIndex = 9;
             // 
             // Frm_Cadastro
