@@ -46,5 +46,10 @@ namespace CadastroUsuario
             // Fecha a janela atual da aplicação.
             this.Close();
         }
+
+        private void lbl_Idade_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
