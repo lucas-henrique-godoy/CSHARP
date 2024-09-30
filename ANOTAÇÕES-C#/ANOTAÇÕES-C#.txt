@@ -452,5 +452,16 @@ MINHAS EXPLICAÇÕESS SIMPLIFICADAS:
 
 -NO VISUAL STUDIO COMMUNITY A CAIXINHA É UM MÉTODO, E A CHAVE DE FERRAMENTA É UM ATRIBUTO.
 
+_______________________________________________________________________________________________________________________________________________________________________
+
+- PADRAO DE PROJETO MVC MODEL-VIEW-CONTROLLER.
+ 
+- VIEW: Pasta que cuidar da visualização dos dados, que serão visualizados pelo usuário(Parte do Front-end).
+
+- CONTROLLER: Onde fica a regra de negócio, ou seja, onde são trabalhados os dados. É onde pego os dados da view, trago para a controller, trabalho eles e jogo pra model.
+
+- MODEL: É onde eu vou persistir os dados no banco de dados.   
+
+
 
 
