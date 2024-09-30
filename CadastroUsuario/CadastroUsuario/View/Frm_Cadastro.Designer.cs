@@ -57,7 +57,7 @@
             // lbl_Data_Nascimento
             // 
             this.lbl_Data_Nascimento.AutoSize = true;
-            this.lbl_Data_Nascimento.Location = new System.Drawing.Point(24, 55);
+            this.lbl_Data_Nascimento.Location = new System.Drawing.Point(24, 59);
             this.lbl_Data_Nascimento.Name = "lbl_Data_Nascimento";
             this.lbl_Data_Nascimento.Size = new System.Drawing.Size(89, 13);
             this.lbl_Data_Nascimento.TabIndex = 1;
@@ -67,7 +67,7 @@
             // lbl_CPF
             // 
             this.lbl_CPF.AutoSize = true;
-            this.lbl_CPF.Location = new System.Drawing.Point(24, 102);
+            this.lbl_CPF.Location = new System.Drawing.Point(208, 59);
             this.lbl_CPF.Name = "lbl_CPF";
             this.lbl_CPF.Size = new System.Drawing.Size(27, 13);
             this.lbl_CPF.TabIndex = 2;
@@ -77,7 +77,7 @@
             // lbl_Telefone
             // 
             this.lbl_Telefone.AutoSize = true;
-            this.lbl_Telefone.Location = new System.Drawing.Point(24, 149);
+            this.lbl_Telefone.Location = new System.Drawing.Point(24, 110);
             this.lbl_Telefone.Name = "lbl_Telefone";
             this.lbl_Telefone.Size = new System.Drawing.Size(49, 13);
             this.lbl_Telefone.TabIndex = 3;
@@ -86,7 +86,7 @@
             // lbl_Endereco
             // 
             this.lbl_Endereco.AutoSize = true;
-            this.lbl_Endereco.Location = new System.Drawing.Point(24, 196);
+            this.lbl_Endereco.Location = new System.Drawing.Point(24, 161);
             this.lbl_Endereco.Name = "lbl_Endereco";
             this.lbl_Endereco.Size = new System.Drawing.Size(53, 13);
             this.lbl_Endereco.TabIndex = 4;
@@ -95,14 +95,14 @@
             // 
             // txt_Nome
             // 
-            this.txt_Nome.Location = new System.Drawing.Point(24, 28);
+            this.txt_Nome.Location = new System.Drawing.Point(24, 30);
             this.txt_Nome.Name = "txt_Nome";
             this.txt_Nome.Size = new System.Drawing.Size(287, 20);
             this.txt_Nome.TabIndex = 5;
             // 
             // txt_Endereco
             // 
-            this.txt_Endereco.Location = new System.Drawing.Point(24, 216);
+            this.txt_Endereco.Location = new System.Drawing.Point(24, 183);
             this.txt_Endereco.Name = "txt_Endereco";
             this.txt_Endereco.Size = new System.Drawing.Size(287, 20);
             this.txt_Endereco.TabIndex = 9;
@@ -117,7 +117,7 @@
             // 
             // btn_Cancelar
             // 
-            this.btn_Cancelar.Location = new System.Drawing.Point(472, 242);
+            this.btn_Cancelar.Location = new System.Drawing.Point(472, 209);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Size = new System.Drawing.Size(114, 32);
             this.btn_Cancelar.TabIndex = 11;
@@ -127,7 +127,7 @@
             // 
             // btn_Salvar
             // 
-            this.btn_Salvar.Location = new System.Drawing.Point(346, 242);
+            this.btn_Salvar.Location = new System.Drawing.Point(346, 209);
             this.btn_Salvar.Name = "btn_Salvar";
             this.btn_Salvar.Size = new System.Drawing.Size(120, 32);
             this.btn_Salvar.TabIndex = 12;
@@ -138,22 +138,22 @@
             // lbl_Usuarios
             // 
             this.lbl_Usuarios.FormattingEnabled = true;
-            this.lbl_Usuarios.Location = new System.Drawing.Point(346, 24);
+            this.lbl_Usuarios.Location = new System.Drawing.Point(346, 30);
             this.lbl_Usuarios.Name = "lbl_Usuarios";
-            this.lbl_Usuarios.Size = new System.Drawing.Size(240, 212);
+            this.lbl_Usuarios.Size = new System.Drawing.Size(240, 173);
             this.lbl_Usuarios.TabIndex = 13;
             // 
             // dt_Data_Nascimento
             // 
             this.dt_Data_Nascimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dt_Data_Nascimento.Location = new System.Drawing.Point(27, 75);
+            this.dt_Data_Nascimento.Location = new System.Drawing.Point(27, 81);
             this.dt_Data_Nascimento.Name = "dt_Data_Nascimento";
             this.dt_Data_Nascimento.Size = new System.Drawing.Size(104, 20);
             this.dt_Data_Nascimento.TabIndex = 14;
             // 
             // mtxt_CPF
             // 
-            this.mtxt_CPF.Location = new System.Drawing.Point(24, 122);
+            this.mtxt_CPF.Location = new System.Drawing.Point(211, 84);
             this.mtxt_CPF.Mask = "000.000.000-00";
             this.mtxt_CPF.Name = "mtxt_CPF";
             this.mtxt_CPF.Size = new System.Drawing.Size(100, 20);
@@ -161,7 +161,7 @@
             // 
             // mtxt_Telefone
             // 
-            this.mtxt_Telefone.Location = new System.Drawing.Point(27, 169);
+            this.mtxt_Telefone.Location = new System.Drawing.Point(27, 132);
             this.mtxt_Telefone.Mask = "(00)00000-0000";
             this.mtxt_Telefone.Name = "mtxt_Telefone";
             this.mtxt_Telefone.Size = new System.Drawing.Size(100, 20);
@@ -171,7 +171,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(599, 291);
+            this.ClientSize = new System.Drawing.Size(599, 253);
             this.Controls.Add(this.mtxt_Telefone);
             this.Controls.Add(this.mtxt_CPF);
             this.Controls.Add(this.dt_Data_Nascimento);
