@@ -46,15 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Frm_Cadastro.cs">
+    <Compile Include="View\Frm_Cadastro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Cadastro.Designer.cs">
+    <Compile Include="View\Frm_Cadastro.Designer.cs">
       <DependentUpon>Frm_Cadastro.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Frm_Cadastro.resx">
+    <EmbeddedResource Include="View\Frm_Cadastro.resx">
       <DependentUpon>Frm_Cadastro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -78,6 +78,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controller\" />
+    <Folder Include="Model\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
