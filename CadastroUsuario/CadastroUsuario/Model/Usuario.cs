@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CadastroUsuario.Model
 {
-    internal class Usuario
+    public class Usuario
     {
         public string nome {  get; set; }
 

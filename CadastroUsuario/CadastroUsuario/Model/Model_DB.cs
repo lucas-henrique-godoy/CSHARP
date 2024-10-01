@@ -1,10 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using Dapper;
+using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+
 
 
 namespace CadastroUsuario.Model
@@ -39,7 +40,7 @@ namespace CadastroUsuario.Model
                 parameters.Add("@Telefone", usuario.telefone);
                 parameters.Add("@Endereco", usuario.endereco);
 
-                string result = Instance.sqlConnection.Query<string>("spSLN_CadastroUsuario", parameters, CommandType.StoredProcedure).ToString();
+                string result = Instance.sqlConnection.Query<string>("spSLN_CadastroUsuario", parameters, commandType: CommandType.StoredProcedure).ToString();
 
                 if(result == "Usuário já cadastrado!")
                 {
