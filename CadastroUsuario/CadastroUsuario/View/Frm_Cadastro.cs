@@ -42,7 +42,7 @@ namespace CadastroUsuario
                                
                 if(resultado == true)
                 {
-                    MessageBox.Show("Usuário salvo com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Usuário salvo com sucesso!", "Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     LimparCampos();
                 }
                 else

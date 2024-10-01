@@ -18,3 +18,6 @@ C:\Users\lucasgodoy\Desktop\CSHARP\CadastroUsuario\CadastroUsuario\obj\Debug\Cad
 C:\Users\lucasgodoy\Desktop\CSHARP\CadastroUsuario\CadastroUsuario\obj\Debug\CadastroUsuario.csproj.CoreCompileInputs.cache
 C:\Users\lucasgodoy\Desktop\CSHARP\CadastroUsuario\CadastroUsuario\obj\Debug\CadastroUsuario.exe
 C:\Users\lucasgodoy\Desktop\CSHARP\CadastroUsuario\CadastroUsuario\obj\Debug\CadastroUsuario.pdb
+C:\Users\lucasgodoy\Desktop\CSHARP\CadastroUsuario\CadastroUsuario\bin\Debug\Dapper.dll
+C:\Users\lucasgodoy\Desktop\CSHARP\CadastroUsuario\CadastroUsuario\bin\Debug\Dapper.xml
+C:\Users\lucasgodoy\Desktop\CSHARP\CadastroUsuario\CadastroUsuario\obj\Debug\Cadastro.79F045FB.Up2Date

@@ -42,7 +42,7 @@ namespace CadastroUsuario.Model
 
                 string result = Instance.sqlConnection.Query<string>("spSLN_CadastroUsuario", parameters, commandType: CommandType.StoredProcedure).ToString();
 
-                if(result == "Usuário já cadastrado!")
+                if (result == "Usuário já cadastrado!")
                 {
                     return false;
                 }
