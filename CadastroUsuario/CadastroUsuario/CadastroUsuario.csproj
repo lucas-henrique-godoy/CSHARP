@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Model_DB.cs" />
     <Compile Include="Model\Usuario.cs" />
     <Compile Include="View\Frm_Cadastro.cs">
       <SubType>Form</SubType>

@@ -1,11 +1,14 @@
 ﻿using CadastroUsuario.Model;
 using System;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CadastroUsuario
 {
     public partial class Frm_Cadastro : Form
     {
+        Model_DB model_DB = new Model_DB();
+
         public Frm_Cadastro()
         {
             InitializeComponent();
@@ -34,12 +37,19 @@ namespace CadastroUsuario
                 usuario.telefone = mtxt_Telefone.Text;
                 usuario.endereco = txt_Endereco.Text;
 
-                //lbl_Usuarios.Items.Add(usuario);
+                bool resultado = model_DB.SalvarUsuario(usuario);
 
-                LimparCampos();
+                               
+                if(resultado == true)
+                {
+                    MessageBox.Show("Usuário salvo com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LimparCampos();
+                }
+                else
+                {
+                    MessageBox.Show("Usuário Existente em nossa Base de Dados, por favor faça outro cadastro!", "Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
                 
-
-                MessageBox.Show("Usuário salvo com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
