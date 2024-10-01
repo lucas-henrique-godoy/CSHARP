@@ -42,12 +42,12 @@ namespace CadastroUsuario
                                
                 if(resultado == true)
                 {
-                    MessageBox.Show("Usuário salvo com sucesso!", "Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(" Usuário salvo com sucesso!", "Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     LimparCampos();
                 }
                 else
                 {
-                    MessageBox.Show("Usuário existente em nossa base de dados, por favor faça outro cadastro!", "Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(" Usuário existente em nossa base de dados, por favor faça outro cadastro!", "Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 
             }
