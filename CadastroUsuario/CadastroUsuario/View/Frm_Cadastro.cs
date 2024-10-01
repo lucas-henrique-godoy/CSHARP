@@ -47,7 +47,7 @@ namespace CadastroUsuario
                 }
                 else
                 {
-                    MessageBox.Show("Usuário Existente em nossa Base de Dados, por favor faça outro cadastro!", "Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Usuário Existente em nossa Base de Dados, por favor faça outro cadastro!", "Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 
             }
