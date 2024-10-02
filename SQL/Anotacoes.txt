@@ -389,8 +389,6 @@ O Right Join é o oposto do Left Join. Ele retorna todas as linhas da tabela da 
 
 Exemplo: Para ver todos os pedidos, mesmo que alguns clientes não existam, usaríamos um Right Join.
 
-sql
-Copiar código
 SELECT Clientes.nome, Pedidos.id
 FROM Clientes
 RIGHT JOIN Pedidos ON Clientes.id = Pedidos.cliente_id;
@@ -398,4 +396,4 @@ Resumo
 Inner Join: apenas correspondências.
 Left Join: todos da tabela da esquerda + correspondências da tabela da direita.
 Right Join: todos da tabela da direita + correspondências da tabela da esquerda.
-Esses joins são fundamentais para trabalhar com dados relacionais no SQL, permitindo análises mais complexas e integradas!
+Esses joins são fundamentais para trabalhar com dados relacionais no SQL, permitindo análises mais complexas e integradas.
