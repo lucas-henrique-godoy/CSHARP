@@ -1,0 +1,37 @@
+SELECT * FROM tbEndereco
+
+SELECT * FROM tbNome
+
+INSERT INTO tbNome (Nome, Idade, Ativo, IdEndereco) VALUES ('Lucas', 27, 1)
+	
+INSERT INTO tbEndereco (Logradouro, Bairro, Numero) VALUES ('Rua Carmine Todaro', 'Residencial Jundiaí', 1300)	
+
+-- INNER JOIN
+SELECT 
+	T1.Nome,
+	T1.Idade,
+	T2.Logradouro
+FROM 
+	tbNome AS T1
+	INNER JOIN tbEndereco AS T2 ON T1.IdEndereco = T2.Id
+
+
+-- LEFT JOIN
+SELECT 
+	T1.Nome,
+	T1.Idade,
+	T2.Logradouro
+FROM 
+	tbNome AS T1
+	LEFT JOIN tbEndereco AS T2 ON T1.IdEndereco = T2.Id
+
+-- RIGHT JOIN
+SELECT 
+	T1.Nome,
+	T1.Idade,
+	T2.Logradouro
+FROM 
+	tbNome AS T1
+	RIGHT JOIN tbEndereco AS T2 ON T1.IdEndereco = T2.Id
+
+
