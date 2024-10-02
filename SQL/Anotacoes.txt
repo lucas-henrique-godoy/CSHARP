@@ -432,5 +432,45 @@ FROM
 
 _______________________________________________________________________________________________________________________________________________________________________
 
-- PROCEDURE: 
+- STORED PROCEDURES (PROCEDURES)
+Definição: Uma stored procedure (procedimento armazenado) é um conjunto de instruções SQL que podem ser executadas como uma única unidade. Elas são armazenadas no banco de dados e podem ser reutilizadas, o que facilita a manutenção e a segurança.
+
+Características:
+
+Parâmetros: Você pode passar parâmetros para uma stored procedure para personalizar sua execução.
+Reutilização: Uma vez criada, uma stored procedure pode ser chamada várias vezes sem a necessidade de reescrever o código.
+Controle de Acesso: Você pode controlar o acesso a dados sensíveis, permitindo que usuários executem procedimentos sem dar acesso direto às tabelas.
+Exemplo de Criação:
+
+CREATE PROCEDURE GetEmployeeById
+    @EmployeeId INT
+AS
+BEGIN
+    SELECT * FROM Employees WHERE Id = @EmployeeId;
+END;
+
+Chamada:
+
+EXEC GetEmployeeById @EmployeeId = 1;
+
+
+- VIEWS:
+Definição: Uma view (visão) é uma tabela virtual que é baseada no resultado de uma consulta SQL. As views não armazenam dados fisicamente; em vez disso, elas armazenam a consulta que gera os dados.
+
+Características:
+
+Simplicidade: Elas podem simplificar consultas complexas, permitindo que os usuários acessem dados de maneira mais intuitiva.
+Segurança: Você pode usar views para restringir o acesso a determinadas colunas de uma tabela.
+Atualizáveis: Algumas views podem ser atualizáveis, permitindo que você insira, atualize ou delete dados nas tabelas subjacentes.
+Exemplo de Criação:
+
+CREATE VIEW EmployeeView AS
+SELECT Id, Name, Department FROM Employees;
+Uso:
+
+
+SELECT * FROM EmployeeView;
+Resumo das Diferenças
+Stored Procedures: São usadas para encapsular lógica de negócios e operações mais complexas, permitindo a execução de várias instruções SQL em uma única chamada.
+Views: São usadas para apresentar dados de uma ou mais tabelas de forma simplificada, sem armazenar dados fisicamente.
 
