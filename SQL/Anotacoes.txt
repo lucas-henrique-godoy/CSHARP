@@ -368,22 +368,23 @@ ________________________________________________________________________________
 Vamos falar sobre os joins no SQL, que são usados para combinar dados de duas ou mais tabelas.
 
 1. Inner Join
-O Inner Join retorna apenas as linhas que têm correspondências em ambas as tabelas. Se uma linha em uma tabela não tiver uma correspondência na outra tabela, ela será excluída do resultado.
+O Inner Join retorna apenas as linhas que têm correspondências em ambas as tabelas. Se uma linha em uma tabela não tiver uma correspondência na outra tabela, ela será excluída do resultado. 
 
 Exemplo: Suponha que você tenha duas tabelas, Clientes e Pedidos. Um Inner Join entre essas tabelas mostraria apenas os clientes que fizeram pedidos.
 
 SELECT Clientes.nome, Pedidos.id
 FROM Clientes
 INNER JOIN Pedidos ON Clientes.id = Pedidos.cliente_id;
+
 2. Left Join (ou Left Outer Join)
 O Left Join retorna todas as linhas da tabela da esquerda (neste caso, Clientes), e as linhas correspondentes da tabela da direita (Pedidos). Se não houver correspondência, os resultados da tabela da direita serão preenchidos com NULL.
 
 Exemplo: Se quisermos ver todos os clientes, independentemente de terem feito pedidos ou não, usaríamos um Left Join.
 
-
 SELECT Clientes.nome, Pedidos.id
 FROM Clientes
 LEFT JOIN Pedidos ON Clientes.id = Pedidos.cliente_id;
+
 3. Right Join (ou Right Outer Join)
 O Right Join é o oposto do Left Join. Ele retorna todas as linhas da tabela da direita (Pedidos), e as linhas correspondentes da tabela da esquerda (Clientes). Se não houver correspondência, os resultados da tabela da esquerda serão preenchidos com NULL.
 
@@ -431,5 +432,5 @@ FROM
 
 _______________________________________________________________________________________________________________________________________________________________________
 
-
+- PROCEDURE: 
 
