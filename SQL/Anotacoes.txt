@@ -361,4 +361,8 @@ ROLLBACK TRAN
 -- Confirma a transação. (Neste caso, não terá efeito, pois o ROLLBACK foi executado antes.)
 COMMIT TRAN
 
+_______________________________________________________________________________________________________________________________________________________________________
+
+
+
 
