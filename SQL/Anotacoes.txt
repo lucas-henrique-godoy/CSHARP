@@ -400,7 +400,7 @@ Esses joins são fundamentais para trabalhar com dados relacionais no SQL, permi
 
 _______________________________________________________________________________________________________________________________________________________________________
 
--EXEMPLO DE INNER JOIN:
+-EXEMPLO 1 DE INNER JOIN:
 -- Seleciona todos os registros da tabela tbEndereco
 SELECT * FROM tbEndereco;
 
@@ -415,4 +415,21 @@ INSERT INTO tbEndereco (Logradouro, Bairro, Numero) VALUES ('Rua Dario Bocchino'
 
 -- Faz uma junção entre tbNome e tbEndereco, onde IdEndereco de tbNome corresponde ao Id de tbEndereco
 SELECT * FROM tbNome AS T1 INNER JOIN tbEndereco AS T2 ON T1.IdEndereco = T2.Id;
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-EXEMPLO 2 DE INNER JOIN:
+
+-- Seleciona o Nome e Idade da tabela tbNome e Logradouro da tabela tbEndereco
+SELECT 
+    T1.Nome,        -- Nome da pessoa na tabela tbNome
+    T1.Idade,       -- Idade da pessoa na tabela tbNome
+    T2.Logradouro   -- Logradouro associado à pessoa na tabela tbEndereco
+FROM 
+    tbNome AS T1   -- tbNome é referenciada como T1
+    INNER JOIN tbEndereco AS T2 -- Realiza uma junção interna com tbEndereco, referenciada como T2
+    ON T1.IdEndereco = T2.Id; -- Condição de junção: IdEndereco de T1 deve corresponder ao Id de T2
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+
 
