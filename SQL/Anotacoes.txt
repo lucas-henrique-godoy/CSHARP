@@ -397,3 +397,22 @@ Inner Join: apenas correspondências.
 Left Join: todos da tabela da esquerda + correspondências da tabela da direita.
 Right Join: todos da tabela da direita + correspondências da tabela da esquerda.
 Esses joins são fundamentais para trabalhar com dados relacionais no SQL, permitindo análises mais complexas e integradas.
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+-EXEMPLO DE INNER JOIN:
+-- Seleciona todos os registros da tabela tbEndereco
+SELECT * FROM tbEndereco;
+
+-- Seleciona todos os registros da tabela tbNome
+SELECT * FROM tbNome;
+
+-- Insere um novo registro na tabela tbNome com Nome, Idade, Ativo e IdEndereco
+INSERT INTO tbNome (Nome, Idade, Ativo, IdEndereco) VALUES ('Lucas', 27, 1, 1);
+
+-- Insere um novo registro na tabela tbEndereco com Logradouro, Bairro e Numero
+INSERT INTO tbEndereco (Logradouro, Bairro, Numero) VALUES ('Rua Dario Bocchino', 'Jardim Novo Horizonte', 2252);
+
+-- Faz uma junção entre tbNome e tbEndereco, onde IdEndereco de tbNome corresponde ao Id de tbEndereco
+SELECT * FROM tbNome AS T1 INNER JOIN tbEndereco AS T2 ON T1.IdEndereco = T2.Id;
+
