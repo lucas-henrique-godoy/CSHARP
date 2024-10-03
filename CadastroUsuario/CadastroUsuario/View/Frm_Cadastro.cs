@@ -84,5 +84,11 @@ namespace CadastroUsuario
                 }
             }
         }
+
+        private void lbl_Usuarios_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+            
+        }
     }
 }

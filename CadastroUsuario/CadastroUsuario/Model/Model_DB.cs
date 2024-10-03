@@ -2,52 +2,53 @@
 using System.Data;
 using System.Data.SqlClient;
 using Dapper;
-using System.IO;
-using System.Linq;
-using System.Text;
-
-
 
 namespace CadastroUsuario.Model
 {
     public class Model_DB
     {
         private static readonly Lazy<Model_DB> Lazy = new Lazy<Model_DB>(() => new Model_DB());
-        public static Model_DB Instance { get {  return Lazy.Value; } }
+        public static Model_DB Instance { get { return Lazy.Value; } }
         public SqlConnection sqlConnection { get; set; } // Traz a conexão com o banco de dados.
-        public SqlDataAdapter adapter { get; set; } // Permite adaptar alguns comandos do banco de dados.
 
-        public Model_DB() 
+        public Model_DB()
         {
-            sqlConnection = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Database=master;Trusted_Connection=True;");
+            // Conexão ao banco de dados dbCadastro
+            sqlConnection = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Database=dbCadastro;Trusted_Connection=True;");
         }
-
 
         public bool SalvarUsuario(Usuario usuario)
         {
-            try 
+            try
             {
-                if (Instance.sqlConnection.State != System.Data.ConnectionState.Open)
+                if (Instance.sqlConnection.State != ConnectionState.Open)
                 {
                     Instance.sqlConnection.Open();
                 }
 
-                var parameters = new DynamicParameters();
+                // Verifica se o usuário já existe
+                var usuarioExistente = Instance.sqlConnection.QueryFirstOrDefault<string>(
+                    "SELECT CPF FROM tbUsuario WHERE CPF = @CPF", new { CPF = usuario.cpf });
 
-                parameters.Add("@Nome", usuario.nome);
-                parameters.Add("@DataNascimento", usuario.dataNascimento);
-                parameters.Add("@CPF", usuario.cpf);
-                parameters.Add("@Telefone", usuario.telefone);
-                parameters.Add("@Endereco", usuario.endereco);
-
-                string result = Instance.sqlConnection.Query<string>("spSLN_CadastroUsuario", parameters, commandType: CommandType.StoredProcedure).ToString();
-
-                if (result == "Usuário já cadastrado!")
+                if (usuarioExistente != null)
                 {
-                    return false;
+                    return false; // Usuário já cadastrado
                 }
 
-                return true;
+                // Insere o novo endereço e captura o ID
+                var idEndereco = Instance.sqlConnection.QuerySingle<int>(
+                    "INSERT INTO tbEndereco (Logradouro) OUTPUT INSERTED.ID VALUES (@Endereco);",
+                    new { Endereco = usuario.endereco });
+
+                // Calcula a idade
+                var idade = DateTime.Now.Year - usuario.dataNascimento.Year;
+
+                // Insere o novo usuário
+                Instance.sqlConnection.Execute(
+                    "INSERT INTO tbUsuario (Nome, Idade, Ativo, CPF, IdEndereco) VALUES (@Nome, @Idade, 1, @CPF, @IdEndereco);",
+                    new { Nome = usuario.nome, Idade = idade, CPF = usuario.cpf, IdEndereco = idEndereco });
+
+                return true; // Cadastro realizado com sucesso
             }
             catch (Exception ex)
             {

@@ -141,6 +141,7 @@
             this.lbl_Usuarios.Name = "lbl_Usuarios";
             this.lbl_Usuarios.Size = new System.Drawing.Size(240, 173);
             this.lbl_Usuarios.TabIndex = 13;
+            this.lbl_Usuarios.SelectedIndexChanged += new System.EventHandler(this.lbl_Usuarios_SelectedIndexChanged);
             // 
             // dtp_Nascimento
             // 
