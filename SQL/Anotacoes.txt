@@ -459,9 +459,9 @@ Definição: Uma view (visão) é uma tabela virtual que é baseada no resultado
 
 Características:
 
-Simplicidade: Elas podem simplificar consultas complexas, permitindo que os usuários acessem dados de maneira mais intuitiva.
-Segurança: Você pode usar views para restringir o acesso a determinadas colunas de uma tabela.
-Atualizáveis: Algumas views podem ser atualizáveis, permitindo que você insira, atualize ou delete dados nas tabelas subjacentes.
+- Simplicidade: Elas podem simplificar consultas complexas, permitindo que os usuários acessem dados de maneira mais intuitiva.
+- Segurança: Você pode usar views para restringir o acesso a determinadas colunas de uma tabela.
+- Atualizáveis: Algumas views podem ser atualizáveis, permitindo que você insira, atualize ou delete dados nas tabelas subjacentes.
 Exemplo de Criação:
 
 CREATE VIEW EmployeeView AS
